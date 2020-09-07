@@ -2,7 +2,7 @@ function toggle () {
     btn.classList.toggle("open"), header_content.classList.toggle("open")
 }
 
-var images_src1 = new Array("./images/test1.jpg","./images/test2.png","./images/test3.png");
+var images_src1 = new Array("../../images/test1.jpg","../../images/test2.png","../../images/test3.png");
 var photo_num = 0;
 function OnButtonClick1() {
     if (photo_num == 2) {
