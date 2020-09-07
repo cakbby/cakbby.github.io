@@ -1,0 +1,318 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+.header {
+    margin: 0 auto;
+    height: 45px;
+    background-color: #454545;
+    width: 100vw;
+    display: flex;
+}
+
+.header .header_nav {
+    margin: 8px 0 8px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header .header_title {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto 30px;
+    letter-spacing: 2px;
+}
+.header .header_title a{
+    color: white;
+    line-height: 29px;
+}
+
+.header .header_nav .header_naviItem {
+    font-family: "Noto Sans JP";
+    font-weight: 350;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    width: 100px;
+    text-align: center;
+}
+
+.header .header_nav .header_naviItem:hover{
+    background: gray;
+}
+
+.header .header_nav .header_naviItem a{
+    color: white;
+    line-height: 29px;
+}
+
+.header .header_nav .header_naviDiv {
+    margin: auto 0px auto;
+    width: 1px;
+    height: 30px;
+    border-left: solid 1px #FFFFFF;
+}
+
+.header #mobile_header_content {
+    visibility: hidden;
+    display: none
+}
+
+@media screen and (max-width: 1240px) and (min-width: 780px) {
+    .header {
+        padding: 0 2em
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .header {
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: #fff
+    }
+    .header .header_nav {
+        margin: 0
+    }
+    .header .header_logo {
+        height: 40px;
+        margin: 0;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%)
+    }
+    .header .header_logo img {
+        height: 30px;
+        width: auto
+    }
+    .header .header_naviItem {
+        display: none
+    }
+    .header .mobile {
+        display: block
+    }
+    .header .head-btn, .header .head-btn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box
+    }
+    .header .head-btn {
+        position: fixed;
+        top: 22px;
+        right: 22px;
+        width: 20px;
+        height: 16px;
+        line-height: 50px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 999
+    }
+    .header .head-btn span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #999
+    }
+    .header .head-btn span:nth-of-type(1) {
+        top: 0
+    }
+    .header .head-btn span:nth-of-type(2) {
+        top: 7px
+    }
+    .header .head-btn span:nth-of-type(3) {
+        bottom: 0
+    }
+    .header .head-btn.open span:nth-of-type(1) {
+        -webkit-transform: translateY(7px) rotate(-45deg);
+        transform: translateY(7px) rotate(-45deg)
+    }
+    .header .head-btn.open span:nth-of-type(2) {
+        opacity: 0
+    }
+    .header .head-btn.open span:nth-of-type(3) {
+        -webkit-transform: translateY(-7px) rotate(45deg);
+        transform: translateY(-7px) rotate(45deg)
+    }
+    .header #mobile_header_content {
+        visibility: visible;
+        display: block;
+        pointer-events: none;
+        opacity: 0;
+        height: 100%;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        background-color: #fff;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        transition: opacity 0.5s
+    }
+    .header #mobile_header_content .header_nav {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%);
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        list-style-type: none
+    }
+    .header #mobile_header_content .header_nav li {
+        margin: 0
+    }
+    .header #mobile_header_content .header_naviItem {
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        font-size: 24px
+    }
+    .header #mobile_header_content.open {
+        pointer-events: auto;
+        opacity: 0.9
+    }
+}
+
+.test {
+    max-width: 1200px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif
+}
+
+.test html, .test body, .test div, .test span, .test applet, .test object, .test iframe,
+.test h1, .test h2, .test h3, .test h4, .test h5, .test h6, .test p, .test blockquote, .test pre,
+.test a, .test abbr, .test acronym, .test address, .test big, .test cite, .test code, .test del,
+.test dfn, .test em, .test img, .test ins, .test kbd, .test q, .test s, .test samp, .test small,
+.test strike, .test strong, .test sub, .test sup, .test tt, .test var, .test b, .test u, .test i,
+.test center, .test dl, .test dt, .test dd, .test ol, .test ul, .test li,
+.test fieldset,
+.test form,
+.test label,
+.test legend,
+.test table,
+.test caption,
+.test tbody,
+.test tfoot,
+.test thead,
+.test tr,
+.test th,
+.test td,
+.test article,
+.test aside,
+.test canvas,
+.test details,
+.test embed,
+.test figure,
+.test figcaption,
+.test footer,
+.test header,
+.test hgroup,
+.test menu,
+.test nav,
+.test output,
+.test ruby,
+.test section,
+.test summary,
+.test time,
+.test mark,
+.test audio,
+.test video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.test .container {
+    margin: 0 auto;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat-y;
+    width: 100vw;
+}
+.test .container .scene {
+    width: 90vw;
+    margin-left: 5vw;
+    display: flex;
+}
+
+.test .container .scene p {
+    margin: 70px 20px 70px;
+    font-size: 17px;
+    line-height: 30px;
+    font-family: "Yu Mincho", "游明朝", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #222222;
+}
+
+.test .container .scene-p {
+    width: 90vw;
+    margin-left: 5vw;
+    display: block;
+}
+
+.test .container .scene-p p {
+    margin: 70px 20px 70px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    font-family: "Yu Mincho", "游明朝", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    color: #222222;
+}
+
+.test .container .scene .mov-photo {
+    display: block;
+}
+
+.test .container .scene .bu{
+    background:#FFFFFF;
+    transition: 0.5s; 
+}
+
+.test .container .scene .bu:hover{
+    background:#2b0e79;
+}
+
+.test .container .scene .movingphoto {
+    margin: 20px;
+    border: solid 5px #222222;
+    border-radius: 5px;
+}
