@@ -344,7 +344,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .LP .menu_back .menu_container .menu .menu_Item {
-        font-size: 1.5vw;
+        font-size: 10px;
         width: 32%;
         line-height: 40px;
     }
@@ -375,7 +375,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .LP .menu_back .menu_container .menu .menu_Item2 {
-        font-size: 2vw;
+        font-size: 10px;
         width: 32%;
         line-height: 32px;
     }
