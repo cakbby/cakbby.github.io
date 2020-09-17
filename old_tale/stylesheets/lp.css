@@ -4,11 +4,12 @@
 html {
     box-sizing: border-box;
     font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
+    /* -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% */
 }
 
 body {
+    
     margin: 0
 }
 
@@ -91,6 +92,13 @@ a:active, a:hover {
         top: 0;
         left: 0;
         z-index: 10;
+    }
+    .header .header_title {
+        font-family: "Noto Sans JP";
+        font-weight: bold;
+        font-size: 13px;
+        margin: auto 20px;
+        letter-spacing: 1px;
     }
     .header .header_naviItem {
         display: none
@@ -435,7 +443,7 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .heading {
         margin-top: 40px;
-        font-size: 4vw;
+        font-size: 20px;
     }
 }
 
@@ -461,7 +469,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .heading::after {
         bottom: -37px;
-
+        left: 17%;
+        right: 17%;
     }
 }
 
@@ -487,6 +496,8 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .explanation {
         width: 80%;
         margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.6;
     }
 }
 
@@ -565,6 +576,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) .disc_title_and_expl .disc_title h2 {
         margin-left: 11.11%;
         line-height: 35px;
+        font-size: 14px;
     }
 }
 
@@ -588,6 +600,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) .disc_title_and_expl p {
         margin-left: 10%;
         width: 39%;
+        font-size: 12px;
         float: left;
     }
 }
@@ -689,6 +702,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) .disc_title_and_expl .disc_title h2 {
         margin-right: 11.11%;
         line-height: 35px;
+        font-size: 14px;
     }
 }
 
@@ -712,6 +726,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) .disc_title_and_expl p {
         margin-right: 10%;
         width: 39%;
+        font-size: 12px;
         float: right;
     }
 }
@@ -816,7 +831,7 @@ a:active, a:hover {
     .LP .background .about_container .about_frame .heading {
         margin-top: 60px;
         margin-bottom: 40px;
-        font-size: 4vw;
+        font-size: 20px;
     }
 }
 
@@ -842,7 +857,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .background .about_container .about_frame .heading::after {
         bottom: -37px;
-
+        left: 17%;
+        right: 17%;
     }
 }
 
@@ -867,7 +883,7 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .background .about_container .about_frame p {
         margin-bottom: 45px;
-
+        font-size: 12px;
     }
 }
 
@@ -921,19 +937,25 @@ a:active, a:hover {
     transition: opacity 0.8s;
 }
 
-.LP .background .gotoplay_container .gotoplay_img:hover{
+.LP .background .gotoplay_container .gotoplay_img:hover {
     filter:drop-shadow(0px 10px 3px #aaaaaa);
     -webkit-transform: translateY(-10px);
     transform: translateY(-10px);
 }
 
-.LP .background .gotoplay_container p{
+.LP .background .gotoplay_container p {
     margin: 10px auto 50px;
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
     font-weight: 900;
     font-size: 3vw;
     color: #b51329;
+}
+
+@media screen and (max-width:480px) {
+    .LP .background .gotoplay_container p {
+        font-size: 17px;
+    }
 }
 
 .footer {
