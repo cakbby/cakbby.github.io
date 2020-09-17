@@ -417,14 +417,14 @@ a:active, a:hover {
     .LP .disc_container .disc_frame {
         width: 90%;
         margin-top: 30px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }
 
 .LP .disc_container .disc_frame .heading {
     display: inline-block;
     position: relative;
-    margin: 90px auto 70px;
+    margin: 150px auto 100px;
     width: 100%;
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
@@ -435,14 +435,14 @@ a:active, a:hover {
 
 @media screen and (max-width: 768px) {
     .LP .disc_container .disc_frame .heading {
-        margin-top: 60px;
+        margin-top: 90px;
         font-size: 4vw;
     }
 }
 
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .heading {
-        margin-top: 40px;
+        margin-top: 70px;
         font-size: 20px;
     }
 }
@@ -502,27 +502,27 @@ a:active, a:hover {
 }
 
 .LP .disc_container .disc_frame .explanation b{
-    font-weight: 800;
+    font-weight: 900;
     color: #b51329;
 }
 
 .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd){
     width: 100%;
     height: fit-content;
-    margin: 100px auto 150px 0;
+    margin: 120px auto 170px 0;
     overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) {
-        margin-top: 80px;
+        margin-top: 100px;
         margin-bottom: 60px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) {
-        margin-top: 60px;
+        margin-top: 70px;
         margin-bottom: 50px;
     }
 }
@@ -633,21 +633,21 @@ a:active, a:hover {
 .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even){
     height: fit-content;
     margin: 50px auto;
-    margin: 100px auto 150px 0;
+    margin: 120px auto 170px 0;
     overflow: hidden;
 }
 
 @media screen and (max-width: 768px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) {
-        margin-top: 70px;
-        margin-bottom: 70px;
+        margin-top: 100px;
+        margin-bottom: 60px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) {
-        margin-top: 60px;
-        margin-bottom: 60px;
+        margin-top: 70px;
+        margin-bottom: 50px;
     }
 }
 
@@ -766,6 +766,7 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .goto_button {
         margin-bottom: 15vh;
+        margin: 100px auto 80px;
         filter:drop-shadow(0px 5px 3px #aaaaaa);
     }
 }
