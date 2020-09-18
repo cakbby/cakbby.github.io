@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP');
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% */
+}
+
+body {
+    
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+.header {
+    margin: 0;
+    height: 45px;
+    background-color: #454545;
+    width: 100%;
+    display: flex;
+}
+
+.header .header_nav {
+    margin: 8px 0 8px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.header .header_title {
+    font-family: "Noto Sans JP";
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto 30px;
+    letter-spacing: 2px;
+}
+.header .header_title a{
+    color: white;
+    line-height: 30px;
+}
+
+.header .header_nav .header_naviItem {
+    font-family: "Noto Sans JP";
+    font-weight: 350;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    width: 100px;
+    text-align: center;
+}
+
+.header .header_nav .header_naviItem:hover{
+    background: gray;
+}
+
+.header .header_nav .header_naviItem a{
+    color: white;
+    line-height: 29px;
+}
+
+.header .header_nav .header_naviDiv {
+    margin: auto 0px auto;
+    width: 1px;
+    height: 30px;
+    border-left: solid 1px #FFFFFF;
+}
+
+.header #mobile_header_content {
+    visibility: hidden;
+    display: none
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 45px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+    .header .header_title {
+        font-family: "Noto Sans JP";
+        font-weight: bold;
+        font-size: 13px;
+        margin: auto 20px;
+        letter-spacing: 1px;
+    }
+    .header .header_naviItem {
+        display: none
+    }
+    .header .header_naviDiv {
+        display: none
+    }
+    .header .mobile {
+        display: block
+    }
+    .header .head-btn, .header .head-btn span {
+        display: inline-block;
+        transition: all 0.4s;
+        box-sizing: border-box
+    }
+    .header .head-btn {
+        position: fixed;
+        top: 14px;
+        right: 20px;
+        width: 24px;
+        height: 18px;
+        line-height: 50px;
+        font-size: 12px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 999
+    }
+    .header .head-btn span {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #FFF
+    }
+    .header .head-btn span:nth-of-type(1) {
+        top: 0
+    }
+    .header .head-btn span:nth-of-type(2) {
+        top: 8px
+    }
+    .header .head-btn span:nth-of-type(3) {
+        bottom: 0
+    }
+    .header .head-btn.open span:nth-of-type(1) {
+        -webkit-transform: translateY(8px) rotate(-45deg);
+        transform: translateY(8px) rotate(-45deg)
+    }
+    .header .head-btn.open span:nth-of-type(2) {
+        opacity: 0
+    }
+    .header .head-btn.open span:nth-of-type(3) {
+        -webkit-transform: translateY(-8px) rotate(45deg);
+        transform: translateY(-8px) rotate(45deg)
+    }
+    .header #mobile_header_content {
+        visibility: visible;
+        display: block;
+        pointer-events: none;
+        opacity: 0;
+        height: 100%;
+        position: fixed;
+        top: 45px;
+        width: 100%;
+        background-color: #333;
+        -webkit-transition: opacity 0.5s;
+        -moz-transition: opacity 0.5s;
+        -ms-transition: opacity 0.5s;
+        transition: opacity 0.5s
+    }
+    .header #mobile_header_content .header_nav {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -40%);
+        -ms-transform: translate(-50%, -40%);
+        transform: translate(-50%, -40%);
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        list-style-type: none
+    }
+    .header #mobile_header_content .header_nav li {
+        margin: 0
+    }
+    .header #mobile_header_content .header_naviItem {
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        font-size: 24px
+    }
+    .header #mobile_header_content.open {
+        pointer-events: auto;
+        opacity: 0.9
+    }
+}
+
+.Play {
+    max-width: 1500px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif
+}
+
+.Play html, .Play body, .Play div, .Play span, .Play applet, .Play object, .Play iframe,
+.Play h1, .Play h2, .Play h3, .Play h4, .Play h5, .Play h6, .Play p, .Play blockquote, .Play pre,
+.Play a, .Play abbr, .Play acronym, .Play address, .Play big, .Play cite, .Play code, .Play del,
+.Play dfn, .Play em, .Play img, .Play ins, .Play kbd, .Play q, .Play s, .Play samp, .Play small,
+.Play strike, .Play strong, .Play sub, .Play sup, .Play tt, .Play var, .Play b, .Play u, .Play i,
+.Play center, .Play dl, .Play dt, .Play dd, .Play ol, .Play ul, .Play li,
+.Play fieldset,
+.Play form,
+.Play label,
+.Play legend,
+.Play table,
+.Play caption,
+.Play tbody,
+.Play tfoot,
+.Play thead,
+.Play tr,
+.Play th,
+.Play td,
+.Play article,
+.Play aside,
+.Play canvas,
+.Play details,
+.Play embed,
+.Play figure,
+.Play figcaption,
+.Play footer,
+.Play header,
+.Play hgroup,
+.Play menu,
+.Play nav,
+.Play output,
+.Play ruby,
+.Play section,
+.Play summary,
+.Play time,
+.Play mark,
+.Play audio,
+.Play video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+@media screen and (max-width: 768px) {
+    .Play .mobile_space {
+        width:100%;
+        height: 45px;
+    }
+}
+
+.Play .background {
+    position: relative;
+    height: fit-content;
+    margin: 0 auto;
+    background-image: url("../images/background3.png");
+    background-repeat: repeat;
+    overflow: hidden;
+}
+
+.Play .background .title_top {
+    display: block;
+    width: 60%;
+    margin: 30vh auto;
+}
+
+.Play .background .first {
+    width: 80%;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;
+    font-weight: 250;
+    color: #333;
+    margin: 90px auto;
+}
+
+.Play .background .scenes {
+    width: 80%;
+    display: block;
+    margin: 80px auto;
+    overflow: hidden;
+}
+
+.Play .background .scenes .paragraph {
+    margin-bottom: 100px;
+    display: block;
+}
+
+.Play .background .scenes .changer {
+    display: block;
+    margin: 10px auto;
+    margin-right: 0;
+}
+
+.Play .background .scenes .changer {
+    display: block;
+    margin: 10px auto;
+    margin-right: 0;
+}
+
+.Play .background .scenes .changer .to_left {
+    float: right;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-top: 12px solid transparent;
+    border-right: 20.76px solid #b51329;
+    border-left: 0;
+    border-bottom: 12px solid transparent;
+    outline: none;
+}
+
+.Play .background .scenes .changer .to_left:hover{
+    border-right: 20.76px solid #ff3355;
+}
+
+.Play .background .scenes .changer .subject {
+    float: right;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 21px;
+    color: #b51329;
+    margin: 0 20px;
+}
+
+.Play .background .scenes .changer .to_right {
+    float: right;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border-top: 12px solid transparent;
+    border-left: 20.76px solid #b51329;
+    border-right: 0;
+    border-bottom: 12px solid transparent;
+    outline: none;
+}
+
+.Play .background .scenes .changer .to_right:hover{
+    border-left: 20.76px solid #ff3355;
+}
+
+.Play .background .scenes .paragraph {
+    margin-bottom: 150px;
+}
+
+.Play .background .scenes .paragraph .paragraph_p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 40px;
+    color: #333;
+}
+
+.Play .background .scenes:nth-of-type(odd) .with_img_paragraph {
+    overflow: hidden;
+}
+.Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container {
+    width: 50%;
+    float: left;
+}
+
+.Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container img {
+    width: 100%;
+}
+
+.Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container .changer{
+    float: left;
+}
+
+.Play .background .scenes:nth-of-type(odd) .with_img_paragraph .paragraph_p {
+    float: right;
+    width: 47%;
+    padding-left: 3%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 40px;
+    color: #333;
+}
+
+.Play .background .scenes:nth-of-type(even) .with_img_paragraph {
+    overflow: hidden;
+}
+.Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container {
+    width: 50%;
+    float: right;
+}
+
+.Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container img {
+    width: 100%;
+}
+
+.Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container .changer{
+    float: right;
+}
+
+.Play .background .scenes:nth-of-type(even) .with_img_paragraph .paragraph_p {
+    float: left;
+    width: 47%;
+    padding-left: 3%;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 40px;
+    color: #333;
+}
+
+.Play .background .scenes .paragraph .paragraph_p2 {
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    font-weight: 250;
+    line-height: 40px;
+    color: #333;
+}
+
+.footer {
+    background-image: url("../images/background3.png");
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+}
+
+.footer_rights {
+    font-size: 10px;
+    margin: 70px 100px 0 0;
+    padding: 0;
+    float: right
+}
+
+.footer_logo {
+    margin: 60px 0 0 100px;
+    float: left
+}
+
+.footer_logo img {
+    height: auto;
+    max-width: 100%;
+    width: 150px
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 20px 0;
+        height: auto
+    }
+    .footer_rights, .footer_logo {
+        float: none;
+        margin: 0 auto
+    }
+}
