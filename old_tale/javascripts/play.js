@@ -95,7 +95,7 @@ function setParams(){
                     eval("OnChange_p(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
                 } else if (pName[0] == "f") {
                     console.log("f  "+pName.substring(1));
-                    eval("OnChange_f(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
+                    eval("OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");");
                 } else if (pName[0] == "i") {
                     console.log("i  "+pName.substring(1));
                     eval("OnChange_i(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
