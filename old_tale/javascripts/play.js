@@ -90,11 +90,11 @@ function setParams(){
             console.log(pName + "と" + pVal);
             if (eval("!" + pName) && !isNaN(pVal)) {
                 if (pName[0] == "p") {
-                    eval("OnChange_p(" + pName.substring(1) + ", 's', " + pVal + ");");
+                    eval("OnChange_p(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
                 } else if (pName[0] == "f") {
-                    eval("OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");");
+                    eval("OnChange_f(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
                 } else if (pName[0] == "i") {
-                    eval("OnChange_i(" + pName.substring(1) + ", 's', " + pVal + ");");
+                    eval("OnChange_i(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
                 }
             }
         }
