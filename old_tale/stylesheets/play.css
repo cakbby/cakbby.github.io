@@ -281,7 +281,7 @@ a:active, a:hover {
     font-size: 20px;
     font-weight: 250;
     color: #333;
-    margin: 90px auto;
+    margin: 90px auto 120px;
 }
 
 .Play .background .scenes {
@@ -294,12 +294,6 @@ a:active, a:hover {
 .Play .background .scenes .paragraph {
     margin-bottom: 100px;
     display: block;
-}
-
-.Play .background .scenes .changer {
-    display: block;
-    margin: 10px auto;
-    margin-right: 0;
 }
 
 .Play .background .scenes .changer {
@@ -387,6 +381,7 @@ a:active, a:hover {
     font-weight: 250;
     line-height: 40px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph {
@@ -414,15 +409,142 @@ a:active, a:hover {
     font-weight: 250;
     line-height: 40px;
     color: #333;
+    margin-bottom: 10px;
 }
 
-.Play .background .scenes .paragraph .paragraph_p2 {
+.Play .background .scenes .paragraph2 {
+    margin-bottom: 100px;
+}
+
+.Play .background .scenes .paragraph2 .paragraph_p2 {
     text-align: center;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
     font-weight: 250;
     line-height: 40px;
     color: #333;
+}
+
+.Play .background .menu_container {
+    height: fit-content;
+    margin: auto auto;
+}
+
+.Play .background .menu_container .menu {
+    width: 80%;
+    height: 80px;
+    line-height: 80px;
+    margin: 0 auto;
+    text-align: justify;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .menu_container .menu {
+        width: 90%;
+        height: 80px;
+        line-height: 80px;
+    }
+}
+
+.Play .background .menu_container .menu:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.Play .background .menu_container .menu .menu_Item {
+    font-size: 1.5vw;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0 auto;
+    list-style-type: none;
+    background: #b51329;
+    text-align: center;
+    width: 25%;
+    line-height: 55px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .menu_container .menu .menu_Item {
+        font-size: 2vw;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .menu_container .menu .menu_Item {
+        font-size: 10px;
+        width: 32%;
+        line-height: 40px;
+    }
+}
+
+.Play .background .share_container {
+    width: 80%;
+    margin: 7% auto 10%;
+    background: #888 url("../images/background3.png");
+    background-blend-mode: screen;
+    border: solid #b51329 10px; 
+    box-sizing: border-box;
+}
+
+.Play .background .share_container h2 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    color: #b51329;
+    font-size: 3.5vw;
+}
+
+.Play .background .share_container .ico_container {
+    display: block;
+    margin: 3% 33%;
+    overflow: hidden;
+}
+
+.Play .background .share_container .ico_container img{
+    float:left;
+    width: 40px;
+    height: 40px;
+    margin-right: 10%;
+}
+
+.Play .background .share_container .ico_container h3{
+    float:left;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 40px;
+    font-weight: 500;
+    color: #333;
+    font-size: 2vw;
+    position: relative;
+}
+
+.Play .background .share_container .ico_container h3:before {
+    background-color: #b51329;
+    content: "";
+    bottom: 4px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+	height: 2px;
+	transform: scaleX(0);
+	transition: 0.3s;
+}
+
+.Play .background .share_container .ico_container h3:hover:before {
+    transform: scaleX(1);
+}
+
+.Play .background .share_container .ico_container:last-child {
+    display: block;
+    margin-bottom: 7%;
+    overflow: hidden;
 }
 
 .footer {
