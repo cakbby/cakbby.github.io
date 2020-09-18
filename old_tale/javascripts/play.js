@@ -90,6 +90,7 @@ function setParams(){
             console.log(pName + "と" + pVal);
             if (eval("!" + pName) && !isNaN(pVal)) {
                 if (pName[0] == "p") {
+                    console.log(pName.substring(1));
                     eval("OnChange_p(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
                 } else if (pName[0] == "f") {
                     eval("OnChange_f(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
