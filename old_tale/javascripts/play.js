@@ -28,34 +28,81 @@ var p_text22 = new Array("　いよいよ山のてっぺんへと登る坂道ま
 //こうして、ウサギはカメに負けたのです。
 
 var ff = new Array("Noto Sans JP, sans-serif", "Sawarabi Mincho, sans-serif", "source-han-sans-japanese, sans-serif", "ta-f1blockline, source-han-sans-japanese, sans-serif", "Noto Serif JP, sans-serif", "dnp-shuei-4gob-std, sans-serif", "tbcinergothic-std, sans-serif", "ro-brush-std, sans-serif");
-var fw = new Array("250", "200", "700", "500", "400", "700", "600", "400");
+var fw = new Array("250", "200", "700", "900", "400", "700", "600", "400");
 
-function change_n(n, N, to) {
-    if (to == 'l') {
+function change_n(n, N, to, a) {
+    if (to == 's') {
+        n = a % N;
+    }else if (to == 'l') {
         n = (n + N - 1) % N;
     } else {
         n = (n + 1) % N;
     }
     return n;
 }
-function OnChange_p(id, to) {
-    eval("p" + id + " = change_n(p" + id + ", p_text"+id+".length, to);");
+function OnChange_p(id, to, a) {
+    eval("p" + id + " = change_n(p" + id + ", p_text"+id+".length, to, 0);");
     eval("document.getElementById(id).innerHTML = p_text" + id + "[p" + id + "];");
 }
-function OnChange_f(id, to) {
-    eval("f" + id + "=change_n(f" + id + ", ff.length, to);");
+function OnChange_f(id, to, a) {
+    eval("f" + id + "=change_n(f" + id + ", ff.length, to, 0);");
     eval("document.getElementById(id).style.fontFamily=ff[f" + id + "];");
     eval("document.getElementById(id).style.fontWeight=fw[f" + id + "];");
 }
-function OnChange_i(id, to) {
-    eval("i" + id + "=change_n(i" + id + ", 3, to);");
+function OnChange_i(id, to, a) {
+    eval("i" + id + "=change_n(i" + id + ", 3, to, 0);");
     eval("document.getElementById(id).src=images_src[" +String((parseInt(id)-1)*3)+"+i" + id + "];");
 }
 function toggle() {
     btn.classList.toggle("open"), header_content.classList.toggle("open")
 }
-window.onload = function () {
-    const spinner = document.getElementById('loading'); spinner.classList.add('loaded'); document.body.className = "";
-};
+var d = 0;
+function switch_del() {
+    d = (d + 1) % 2;
+    var changer_list = document.getElementsByClassName("changer");
+    if (d == 1) {
+        for (var i = 0; i < changer_list.length; i++) {
+            changer_list[i].style.display = "none";
+        }
+        document.getElementById("del__btn").textContent = "ボタンを戻す";
+    } else {
+        for (var i = 0; i < changer_list.length; i++) {
+            changer_list[i].style.display="block";
+        }
+        document.getElementById("del__btn").textContent = "ボタンを消す";
+    }
+}
+var del_btn = document.getElementById("del__btn");
+del_btn.addEventListener("click", switch_del, !1);
 var btn = document.getElementById("js__btn"), header_content = document.getElementById("mobile_header_content");
 btn.addEventListener("click", toggle, !1);
+
+function setParams(){
+    var qStr = window.location.search;
+    console.log(qStr);
+    if (qStr) {
+        console.log(qStr);
+        qStr = qStr.substring(1);
+        var params = qStr.split('&');
+        for (var i = 0; i < params.length; i++) {
+            var pName = params[i].split('=')[0];
+            var pVal = params[i].split('=')[1];
+            console.log(pName + "と" + pVal);
+            if (eval("!" + pName) && !isNan(pVal)) {
+                if (pName[0] == "p") {
+                    eval("OnChange_p(" + pName.substring(1) + ", 's', " + pVal + ");");
+                } else if (pName[0] == "f") {
+                    eval("OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");");
+                } else if (pName[0] == "i") {
+                    eval("OnChange_i(" + pName.substring(1) + ", 's', " + pVal + ");");
+                }
+            }
+        }
+    }
+}
+window.onload = function () {
+    console.log("start setParams");
+    setParams();
+    console.log("end setParams");
+    //const spinner = document.getElementById('loading'); spinner.classList.add('loaded'); document.body.className = "";
+};
