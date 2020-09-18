@@ -88,6 +88,7 @@ function setParams(){
             var pName = params[i].split('=')[0];
             var pVal = params[i].split('=')[1];
             console.log(pName + "と" + pVal);
+            console.log(eval("!" + pName));
             if (eval("!" + pName) && !isNaN(pVal)) {
                 if (pName[0] == "p") {
                     console.log("p  "+pName.substring(1));
