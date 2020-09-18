@@ -21,7 +21,6 @@
 
     <title>メリハリ昔ばなし 企画概要</title>
     <link href="../stylesheets/play.css" rel="stylesheet"/>
-    <script src="../javascripts/play.js" type="text/javascript"></script>
     <link href="https://fonts.googleapis.com/earlyaccess/hannari.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
     <script>
@@ -36,17 +35,17 @@
     </script>
     </head>
 
-    <body class="preload">
+    <body>
         <header class="header">
             <h1 class="header_title">
-                <a href="/">
+                <a href="/mayfes2020/">
                     メリハリ×デザイン展
                 </a>
             </h1>
             
             <ul class="header_nav">
                 <li class="header_naviItem">
-                    <a href="/old_tale/">
+                    <a href="/mayfes2020/old_tale/">
                         物語
                     </a>
                 </li>
@@ -110,42 +109,43 @@
         <section class="Play">
             <div class="mobile_space"></div>
             <div class="background">
+                <a name="top" id="top"></a>
                 <img src="../images/svgs/play_title.svg" class="title_top" alt="Background"/>
                 <p class="first">むかしむかし、あるところにうさぎとかめが暮らしていました。</p>
                 <div class="scenes">
                     <div class="paragraph">
                         <p class="paragraph_p" id=11>　その日は天気が良かったので、かめはお出かけすることにしました。近くの山のふもとまで、ゆっくりのんびり歩いて行きました。するとばったり、知り合いのうさぎと出会いました。<br>　うさぎはお調子者で、かめとは良く競い合ってあそんでいました。「今日も何かで競うことになるのかな」かめはそう思いました。</p>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_p(11, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_p(11, 'r', 0);"></input>
                             <h3 class="subject">文章</h3>
-                            <input type="button" class="to_left" onclick="OnChange_p(11, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_p(11, 'l', 0);"></input>
                         </div>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_f(11, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_f(11, 'r', 0);"></input>
                             <h3 class="subject">フォント</h3>
-                            <input type="button" class="to_left" onclick="OnChange_f(11, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_f(11, 'l', 0);"></input>
                         </div>
                     </div>
                     <div class="with_img_paragraph">
                         <div class="img_container">
                             <img src="../images/play_imgs/play1-1.jpg" id=1 />
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_i(1, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_i(1, 'r', 0);"></input>
                                 <h3 class="subject">絵</h3>
-                                <input type="button" class="to_left" onclick="OnChange_i(1, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_i(1, 'l', 0);"></input>
                             </div>
                         </div>
                         <p class="paragraph_p" id=12>　「明日にでも、あそこのまるい山のてっぺんまで競争しよう。」<br>うさぎがそう持ちかけました。<br>　かめは自分にとってそれが不利なのを感じながらも、仕方なく、次の日にまた今居る場所で待ち合わせすることにしました。</p>
                         <div class="ch_container">
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_p(12, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_p(12, 'r', 0);"></input>
                                 <h3 class="subject">文章</h3>
-                                <input type="button" class="to_left" onclick="OnChange_p(12, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_p(12, 'l', 0);"></input>
                             </div>
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_f(12, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_f(12, 'r', 0);"></input>
                                 <h3 class="subject">フォント</h3>
-                                <input type="button" class="to_left" onclick="OnChange_f(12, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_f(12, 'l', 0);"></input>
                             </div>
                         </div>
                     </div>
@@ -154,36 +154,36 @@
                     <div class="paragraph">
                         <p class="paragraph_p" id=21>　次の日、かめとうさぎは山のてっぺん目指して、よーい、どん！うさぎはぴょんぴょんと川を渡り、森を走り去り、野原をすばやく横切りました。<br>　かめの方はうさぎが通り過ぎていく様子を見ながら頑張って進みましたが、やはりあまり速くないようでした。</p>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_p(21, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_p(21, 'r', 0);"></input>
                             <h3 class="subject">文章</h3>
-                            <input type="button" class="to_left" onclick="OnChange_p(21, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_p(21, 'l', 0);"></input>
                         </div>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_f(21, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_f(21, 'r', 0);"></input>
                             <h3 class="subject">フォント</h3>
-                            <input type="button" class="to_left" onclick="OnChange_f(21, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_f(21, 'l', 0);"></input>
                         </div>
                     </div>
                     <div class="with_img_paragraph">
                         <div class="img_container">
                             <img src="../images/play_imgs/play2-1.jpg" id=2 />
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_i(2, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_i(2, 'r', 0);"></input>
                                 <h3 class="subject">絵</h3>
-                                <input type="button" class="to_left" onclick="OnChange_i(2, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_i(2, 'l', 0);"></input>
                             </div>
                         </div>
                         <p class="paragraph_p" id=22>　いよいよ山のてっぺんへと登る坂道まで来た時、うさぎは振り返りましたが、カメの姿はまったく見えません。<br>「ふん、どんなもんだい。だいたい、カメがウサギとかけっこしようなんて馬鹿な話なのさ。どれ、ここいらで一休みしようかな。」</p>
                         <div class="ch_container">
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_p(22, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_p(22, 'r', 0);"></input>
                                 <h3 class="subject">文章</h3>
-                                <input type="button" class="to_left" onclick="OnChange_p(22, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_p(22, 'l', 0);"></input>
                             </div>
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_f(22, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_f(22, 'r', 0);"></input>
                                 <h3 class="subject">フォント</h3>
-                                <input type="button" class="to_left" onclick="OnChange_f(22, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_f(22, 'l', 0);"></input>
                             </div>
                         </div>
                     </div>
@@ -192,36 +192,36 @@
                     <div class="paragraph">
                         <p class="paragraph_p" id=31>　その日は天気が良かったので、かめはお出かけすることにしました。近くの山のふもとまで、ゆっくりのんびり歩いて行きました。するとばったり、知り合いのうさぎと出会いました。<br>　うさぎはお調子者で、かめとは良く競い合ってあそんでいました。「今日も何かで競うことになるのかな」かめはそう思いました。</p>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_p(31, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_p(31, 'r', 0);"></input>
                             <h3 class="subject">文章</h3>
-                            <input type="button" class="to_left" onclick="OnChange_p(31, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_p(31, 'l', 0);"></input>
                         </div>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_f(31, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_f(31, 'r', 0);"></input>
                             <h3 class="subject">フォント</h3>
-                            <input type="button" class="to_left" onclick="OnChange_f(31, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_f(31, 'l', 0);"></input>
                         </div>
                     </div>
                     <div class="with_img_paragraph">
                         <div class="img_container">
                             <img src="../images/play_imgs/play3-1.jpg" id=3 />
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_i(3, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_i(3, 'r', 0);"></input>
                                 <h3 class="subject">絵</h3>
-                                <input type="button" class="to_left" onclick="OnChange_i(3, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_i(3, 'l', 0);"></input>
                             </div>
                         </div>
                         <p class="paragraph_p" id=32>　「明日にでも、あそこのまるい山のてっぺんまで競争しよう。」<br>うさぎがそう持ちかけました。<br>　かめは自分にとってそれが不利なのを感じながらも、仕方なく、次の日にまた今居る場所で待ち合わせすることにしました。</p>
                         <div class="ch_container">
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_p(32, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_p(32, 'r', 0);"></input>
                                 <h3 class="subject">文章</h3>
-                                <input type="button" class="to_left" onclick="OnChange_p(32, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_p(32, 'l', 0);"></input>
                             </div>
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_f(32, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_f(32, 'r', 0);"></input>
                                 <h3 class="subject">フォント</h3>
-                                <input type="button" class="to_left" onclick="OnChange_f(32, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_f(32, 'l', 0);"></input>
                             </div>
                         </div>
                     </div>
@@ -230,49 +230,71 @@
                     <div class="paragraph">
                         <p class="paragraph_p" id=41>　その日は天気が良かったので、かめはお出かけすることにしました。近くの山のふもとまで、ゆっくりのんびり歩いて行きました。するとばったり、知り合いのうさぎと出会いました。<br>　うさぎはお調子者で、かめとは良く競い合ってあそんでいました。「今日も何かで競うことになるのかな」かめはそう思いました。</p>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_p(41, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_p(41, 'r', 0);"></input>
                             <h3 class="subject">文章</h3>
-                            <input type="button" class="to_left" onclick="OnChange_p(41, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_p(41, 'l', 0);"></input>
                         </div>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_f(41, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_f(41, 'r', 0);"></input>
                             <h3 class="subject">フォント</h3>
-                            <input type="button" class="to_left" onclick="OnChange_f(41, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_f(41, 'l', 0);"></input>
                         </div>
                     </div>
                     <div class="with_img_paragraph">
                         <div class="img_container">
                             <img src="../images/play_imgs/play4-1.jpg" id=4 />
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_i(4, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_i(4, 'r', 0);"></input>
                                 <h3 class="subject">絵</h3>
-                                <input type="button" class="to_left" onclick="OnChange_i(4, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_i(4, 'l', 0);"></input>
                             </div>
                         </div>
                         <p class="paragraph_p" id=42>　「明日にでも、あそこのまるい山のてっぺんまで競争しよう。」<br>うさぎがそう持ちかけました。<br>　かめは自分にとってそれが不利なのを感じながらも、仕方なく、次の日にまた今居る場所で待ち合わせすることにしました。</p>
                         <div class="ch_container">
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_p(42, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_p(42, 'r', 0);"></input>
                                 <h3 class="subject">文章</h3>
-                                <input type="button" class="to_left" onclick="OnChange_p(42, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_p(42, 'l', 0);"></input>
                             </div>
                             <div class="changer">
-                                <input type="button" class="to_right" onclick="OnChange_f(42, 'r');"></input>
+                                <input type="button" class="to_right" onclick="OnChange_f(42, 'r', 0);"></input>
                                 <h3 class="subject">フォント</h3>
-                                <input type="button" class="to_left" onclick="OnChange_f(42, 'l');"></input>
+                                <input type="button" class="to_left" onclick="OnChange_f(42, 'l', 0);"></input>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="scenes">
-                    <div class="paragraph">
-                        <p class="paragraph_p2" id=51>　こうしてうさぎさんは、かめさんにかけっこで負けました。でも不思議と悔しくはなかったようです。<br>うさぎさんはかめさんを甘くみて寝てしまったけれど、どんな相手でも全力で戦うことがたいせつだと、気づいたからです。<br><br>「つぎはぜったい勝つよ、かめさん。もちろん、とちゅうで寝ずにね」<br>「もちろん受けて立つよ。ぼくだって負けていられないさ」<br><br>
+                    <div class="paragraph2">
+                        <p class="paragraph_p2" id=51>　こうしてうさぎさんは、かめさんにかけっこで負けました。でも不思議と悔しくはなかったようです。<br>うさぎさんはかめさんを甘くみて寝てしまったけれど、どんな相手でも全力で戦うことがたいせつだと、気づいたからです。<br><br>「かめさん、次はぜったい勝つよ。もちろん、途中で寝ずにね」<br>「もちろん受けて立つよ。ぼくだって負けていられないさ」<br><br>
                             こうしてふたりはまえよりもずっとなかよしになり、よきライバルになりましたとさ<br><br>めでたしめでたし</p>
                         <div class="changer">
-                            <input type="button" class="to_right" onclick="OnChange_f(51, 'r');"></input>
+                            <input type="button" class="to_right" onclick="OnChange_f(51, 'r', 0);"></input>
                             <h3 class="subject">フォント</h3>
-                            <input type="button" class="to_left" onclick="OnChange_f(51, 'l');"></input>
+                            <input type="button" class="to_left" onclick="OnChange_f(51, 'l', 0);"></input>
                         </div>
+                    </div>
+                </div>
+                <div class="menu_container">
+                    <ul class="menu">
+                        <a href="#top"><li class="menu_Item">はじめにもどる</li></a>
+                        <a href="/mayfes2020/"><li class="menu_Item">五月祭トップへ</li></a>
+                        <li id="del__btn" class="menu_Item">ボタンを消す</li>
+                    </ul>
+                </div>
+                <div class="share_container">
+                    <h2>この状態で共有する？</h2>
+                    <div class="ico_container" id="share_link">
+                        <img src="../images/svgs/link.svg" />
+                        <h3>リンクのコピー</h3>
+                    </div>
+                    <div class="ico_container" id="twitter_link">
+                        <img src="../images/svgs/twitter.svg" />
+                        <h3>ツイートする</h3>
+                    </div>
+                    <div class="ico_container" id="facebook_link">
+                        <img src="../images/svgs/facebook.svg" />
+                        <h3>Facebookに投稿</h3>
                     </div>
             </div>
         </section>
@@ -285,5 +307,7 @@
             </h1>
             <div class="footer_rights">Copyright (C) designing plus nine. All Rights Reserved.</div>
         </footer>
+        <script src="../javascripts/play.js" type="text/javascript"></script>
+
     </body>
 </html>
