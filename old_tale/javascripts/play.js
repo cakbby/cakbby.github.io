@@ -104,7 +104,7 @@ var btn = document.getElementById("js__btn"), header_content = document.getEleme
 btn.addEventListener("click", toggle, !1);
 
 function get_current_link() {
-    var url = location.protocol + location.host + location.pathname + "?";
+    var url = location.protocol + "//" + location.host + location.pathname + "?";
     var n;
     var flag = 0;
     for (var i = 0; i < 8; i++) {
