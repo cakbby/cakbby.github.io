@@ -45,9 +45,7 @@ function OnChange_p(id, to, a) {
     eval("document.getElementById(id).innerHTML = p_text" + id + "[p" + id + "];");
 }
 function OnChange_f(id, to, a) {
-    console.log("f11 is " + String(f11));
     eval("f" + id + "=change_n(f" + id + ", ff.length, to, a);");
-    console.log("f11 is " + String(f11));
     eval("document.getElementById(id).style.fontFamily=ff[f" + id + "];");
     eval("document.getElementById(id).style.fontWeight=fw[f" + id + "];");
 }
@@ -79,7 +77,38 @@ del_btn.addEventListener("click", switch_del, !1);
 var btn = document.getElementById("js__btn"), header_content = document.getElementById("mobile_header_content");
 btn.addEventListener("click", toggle, !1);
 
-function setParams(){
+function sharelink_copy() {
+    var url = location.host + location.pathname + "?";
+    var n;
+    var flag = 0;
+    for (var i = 0; i < 8; i++) {
+        n = eval("p" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1));
+        if (n != 0) {
+            if (flag) {
+                url += "&";
+            } else {
+                flag = 1;
+            }
+            url += "p" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1) + "=" + n;
+        }
+    }
+    console.log(url);
+    var tmp = document.createElement("div");
+    var pre = document.createElement("pre");
+    pre.style.userSelect = "auto";
+    tmp.appendChild(pre).textContent = url;
+    tmp.style.position = "fixed";
+    tmp.right = "200%";
+    document.body.appendChild(tmp);
+    document.getSelection().selectAllChildren(tmp);
+    document.execCommand("copy");
+    document.body.removeChild(tmp);
+}
+
+var link = document.getElementById("share_link");
+link.addEventListener("click", sharelink_copy, !1);
+
+function setParams() {
     var qStr = window.location.search;
     if (qStr) {
         qStr = qStr.substring(1);
@@ -89,22 +118,17 @@ function setParams(){
             var pVal = params[i].split('=')[1];
             if (eval("!" + pName) && !isNaN(pVal)) {
                 if (pName[0] == "p") {
-                    var str = "OnChange_p(" + pName.substring(1) + ", 's', " + pVal + ");";
-                    console.log(str);
-                    eval(str);
+                    eval("OnChange_p(" + pName.substring(1) + ", 's', " + pVal + ");");
                 } else if (pName[0] == "f") {
-                    var str = "OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");";
-                    console.log(str);
-                    eval(str);
+                    eval("OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");");
                 } else if (pName[0] == "i") {
-                    var str = "OnChange_i(" + pName.substring(1) + ", 's', " + pVal + ");";
-                    console.log(str);
-                    eval(str);
+                    eval("OnChange_i(" + pName.substring(1) + ", 's', " + pVal + ");");
                 }
             }
         }
     }
 }
+
 window.onload = function () {
     console.log("start setParams");
     setParams();
