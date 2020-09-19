@@ -274,6 +274,12 @@ a:active, a:hover {
     margin: 30vh auto;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .title_top {
+        width:80%;
+    }
+}
+
 .Play .background .first {
     width: 80%;
     text-align: center;
@@ -284,6 +290,19 @@ a:active, a:hover {
     margin: 90px auto 120px;
 }
 
+@media screen and (max-width: 768px) {
+    .Play .background .first {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .first {
+        font-size: 17px;
+        width: 85%;
+    }
+}
+
 .Play .background .scenes {
     width: 80%;
     display: block;
@@ -291,9 +310,35 @@ a:active, a:hover {
     overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+    .Play .background .scenes {
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 85%;
+    }
+}
+
 .Play .background .scenes .paragraph {
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes .paragraph {
+        margin-bottom: 120px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .paragraph {
+        margin-bottom: 100px;
+    }
 }
 
 .Play .background .scenes .changer {
@@ -314,8 +359,23 @@ a:active, a:hover {
     outline: none;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .changer .to_left {
+        border-top: 10px solid transparent;
+        border-right: 17.32px solid #b51329;
+        border-bottom: 10px solid transparent;
+    }
+}
+
 .Play .background .scenes .changer .to_left:hover{
     border-right: 20.76px solid #ff3355;
+}
+
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .changer .to_left:hover {
+        border-right: 17.32px solid #ff3355;
+    }
 }
 
 .Play .background .scenes .changer .subject {
@@ -326,6 +386,22 @@ a:active, a:hover {
     line-height: 21px;
     color: #b51329;
     margin: 0 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes .changer .subject {
+        margin: 0 15px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .changer .subject {
+        margin: 0 10px;
+        font-size: 13px;
+        line-height:18px;
+    }
 }
 
 .Play .background .scenes .changer .to_right {
@@ -340,12 +416,23 @@ a:active, a:hover {
     outline: none;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .changer .to_right {
+        border-top: 10px solid transparent;
+        border-left: 17.32px solid #b51329;
+        border-bottom: 10px solid transparent;
+    }
+}
+
 .Play .background .scenes .changer .to_right:hover{
     border-left: 20.76px solid #ff3355;
 }
 
-.Play .background .scenes .paragraph {
-    margin-bottom: 180px;
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .changer .to_right:hover {
+        border-left: 17.32px solid #ff3355;
+    }
 }
 
 .Play .background .scenes .paragraph .paragraph_p {
@@ -356,6 +443,20 @@ a:active, a:hover {
     color: #333;
 }
 
+@media screen and (max-width: 768px) {
+    .Play .background .scenes .paragraph .paragraph_p {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .paragraph .paragraph_p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
 .Play .background .scenes:nth-of-type(odd) .with_img_paragraph {
     overflow: hidden;
     margin-bottom: 50px;
@@ -363,6 +464,13 @@ a:active, a:hover {
 .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container {
     width: 50%;
     float: left;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container {
+        width: 100%;
+        float: none;
+    }
 }
 
 .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container img {
@@ -385,6 +493,24 @@ a:active, a:hover {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .paragraph_p {
+        width: 100%;
+        padding-left: 0%;
+        margin-top: 50px;
+        float:none;
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .paragraph_p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph {
     overflow: hidden;
     margin-bottom: 50px;
@@ -392,6 +518,13 @@ a:active, a:hover {
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container {
     width: 50%;
     float: right;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container {
+        width: 100%;
+        float: none;
+    }
 }
 
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container img {
@@ -414,8 +547,38 @@ a:active, a:hover {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 768px) {
+    .Play .background .scenes:nth-of-type(even) .with_img_paragraph .paragraph_p {
+        width: 100%;
+        padding-left: 0%;
+        margin-top: 50px;
+        float:none;
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes:nth-of-type(even) .with_img_paragraph .paragraph_p {
+        font-size: 14px;
+        line-height: 30px;
+    }
+}
+
 .Play .background .scenes .paragraph2 {
     margin-bottom: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes .paragraph2 {
+        margin-bottom: 80px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .paragraph2 {
+        margin-bottom: 50px;
+    }
 }
 
 .Play .background .scenes .paragraph2 .paragraph_p2 {
@@ -425,6 +588,20 @@ a:active, a:hover {
     font-weight: 250;
     line-height: 40px;
     color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes .paragraph2 .paragraph_p2 {
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scenes .paragraph2 .paragraph_p2{
+        font-size: 14px;
+        line-height: 30px;
+    }
 }
 
 .Play .background .menu_container {
@@ -443,7 +620,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .menu_container .menu {
-        width: 90%;
+        width: 85%;
         height: 80px;
         line-height: 80px;
     }
@@ -494,6 +671,12 @@ a:active, a:hover {
     box-sizing: border-box;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .share_container {
+        width: 85%;
+    }
+}
+
 .Play .background .share_container h2 {
     margin-top: 5%;
     margin-bottom: 5%;
@@ -504,6 +687,14 @@ a:active, a:hover {
     font-size: 3.5vw;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .share_container h2 {
+        font-size: 4vw;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
 .Play .background .share_container .ico_container {
     display: block;
     margin: 3% 33%;
@@ -511,11 +702,25 @@ a:active, a:hover {
     cursor:pointer;
 }
 
+@media screen and (max-width: 480px) {
+    .Play .background .share_container .ico_container {
+        margin: 3% 27%;
+    }
+}
+
 .Play .background .share_container .ico_container img{
     float:left;
     width: 40px;
     height: 40px;
     margin-right: 10%;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .share_container .ico_container img{
+        width: 25px;
+        height: 25px;
+        margin-right: 5%;
+    }
 }
 
 .Play .background .share_container .ico_container h3{
@@ -526,6 +731,13 @@ a:active, a:hover {
     color: #333;
     font-size: 2vw;
     position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .share_container .ico_container h3{
+        line-height: 25px;
+        font-size: 3vw;
+    }
 }
 
 .Play .background .share_container .ico_container h3:before {
@@ -548,6 +760,12 @@ a:active, a:hover {
     display: block;
     margin-bottom: 7%;
     overflow: hidden;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .share_container .ico_container:last-child {
+        margin-bottom: 12%;
+    }
 }
 
 .footer {
