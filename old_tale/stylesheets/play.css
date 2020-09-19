@@ -263,7 +263,7 @@ a:active, a:hover {
     position: relative;
     height: fit-content;
     margin: 0 auto;
-    background-image: url("../images/background3.png");
+    background-image: url("../images/background3.jpg");
     background-repeat: repeat;
     overflow: hidden;
 }
@@ -486,7 +486,7 @@ a:active, a:hover {
 .Play .background .share_container {
     width: 80%;
     margin: 7% auto 10%;
-    background: #888 url("../images/background3.png");
+    background: #888 url("../images/background3.jpg");
     background-blend-mode: screen;
     border: solid #b51329 10px; 
     box-sizing: border-box;
