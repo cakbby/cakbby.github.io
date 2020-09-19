@@ -31,7 +31,7 @@ var p_text31 = new Array("「これじゃあ、あんまり張り合いがない
 
 var p_text32 = new Array("　草が肌に触れて心地よく、また、ここまで長く走ってきたために、うさぎは眠くなって寝てしまいました。<br>　気持ちよく寝ているうさぎはなかなか起きなさそうです。一方のかめさんは、地道にじっくりと山を登っていました。",
     "　うさぎさんがそうこうしている間も、かめさんはゆっくりゆっくり進んできます。<br>「うーんしょ、よーいしょ」<br>　はてさてどうなることやら。うさぎさん、ほんとに寝ちゃって、大丈夫？",
-    "<span style='line-height: 3; font-size: 130%;'>ここまできちゃったら<br>かめさんおいつかないよねぇ。<br>眠いしねちゃうぅ…<br>おやすみぃ…すやぁ</span>",
+    "<span style='line-height: 3; font-size: 130%;'>ここまできちゃったら<br>かめさんおいつかないよねぇ。<br>眠いねぇ…もう寝ちゃおうかなぁ…<br>おやすみぃ…すやぁ</span>",
     "　うさぎは実によく走ったもので、その体には思わぬ疲れが潜んでいたのであろう。ただすこし休むという心づもりに反して、瞼が閉じ深い眠りについてしまった。<br>未だ競争の最中の事であった。");
 
 var p_text41 = new Array("　かめはずいぶんたってから、うさぎの所まで来ました。必死に歩いたので、汗がびっしょりです。<br>　寝ているうさぎを見て、にっこり笑いながらかめは言いました。<br>「まさか追いつくなんてね、お先に失礼。」",
@@ -104,7 +104,7 @@ var btn = document.getElementById("js__btn"), header_content = document.getEleme
 btn.addEventListener("click", toggle, !1);
 
 function get_current_link() {
-    var url = location.host + location.pathname + "?";
+    var url = location.protocol + location.host + location.pathname + "?";
     var n;
     var flag = 0;
     for (var i = 0; i < 8; i++) {
@@ -155,7 +155,7 @@ function sharelink_copy() {
     document.getSelection().selectAllChildren(tmp);
     document.execCommand("copy");
     document.body.removeChild(tmp);
-    document.getElementById("share_link_text").textContent = "コピーしました。"
+    document.getElementById("share_link_text").textContent = "コピーしました。";
 }
 
 var link = document.getElementById("share_link");
