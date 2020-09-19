@@ -704,7 +704,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .share_container .ico_container {
-        margin: 3% 27%;
+        margin: 3% 24%;
     }
 }
 
@@ -735,7 +735,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .share_container .ico_container h3{
-        line-height: 25px;
+        line-height: 23px;
         font-size: 4vw;
     }
 }
