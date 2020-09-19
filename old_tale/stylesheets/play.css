@@ -345,7 +345,7 @@ a:active, a:hover {
 }
 
 .Play .background .scenes .paragraph {
-    margin-bottom: 150px;
+    margin-bottom: 180px;
 }
 
 .Play .background .scenes .paragraph .paragraph_p {
@@ -358,6 +358,7 @@ a:active, a:hover {
 
 .Play .background .scenes:nth-of-type(odd) .with_img_paragraph {
     overflow: hidden;
+    margin-bottom: 50px;
 }
 .Play .background .scenes:nth-of-type(odd) .with_img_paragraph .img_container {
     width: 50%;
@@ -386,6 +387,7 @@ a:active, a:hover {
 
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph {
     overflow: hidden;
+    margin-bottom: 50px;
 }
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph .img_container {
     width: 50%;
@@ -403,7 +405,7 @@ a:active, a:hover {
 .Play .background .scenes:nth-of-type(even) .with_img_paragraph .paragraph_p {
     float: left;
     width: 47%;
-    padding-left: 3%;
+    padding-right: 3%;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 18px;
     font-weight: 250;
@@ -466,6 +468,7 @@ a:active, a:hover {
     width: 25%;
     line-height: 55px;
     display: inline-block;
+    cursor:pointer
 }
 
 @media screen and (max-width: 768px) {
@@ -506,7 +509,7 @@ a:active, a:hover {
     display: block;
     margin: 3% 33%;
     overflow: hidden;
-    cursor:pointer
+    cursor:pointer;
 }
 
 .Play .background .share_container .ico_container img{
@@ -549,7 +552,7 @@ a:active, a:hover {
 }
 
 .footer {
-    background-image: url("../images/background3.png");
+    background-image: url("../images/background3.jpg");
     margin: 0 auto;
     height: 150px;
     width: 100%;
