@@ -41,16 +41,16 @@ function change_n(n, N, to, a) {
     return n;
 }
 function OnChange_p(id, to, a) {
-    eval("p" + id + " = change_n(p" + id + ", p_text"+id+".length, to, 0);");
+    eval("p" + id + " = change_n(p" + id + ", p_text"+id+".length, to, a);");
     eval("document.getElementById(id).innerHTML = p_text" + id + "[p" + id + "];");
 }
 function OnChange_f(id, to, a) {
-    eval("f" + id + "=change_n(f" + id + ", ff.length, to, 0);");
+    eval("f" + id + "=change_n(f" + id + ", ff.length, to, a);");
     eval("document.getElementById(id).style.fontFamily=ff[f" + id + "];");
     eval("document.getElementById(id).style.fontWeight=fw[f" + id + "];");
 }
 function OnChange_i(id, to, a) {
-    eval("i" + id + "=change_n(i" + id + ", 3, to, 0);");
+    eval("i" + id + "=change_n(i" + id + ", 3, to, a);");
     eval("document.getElementById(id).src=images_src[" +String((parseInt(id)-1)*3)+"+i" + id + "];");
 }
 function toggle() {
