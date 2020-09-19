@@ -79,26 +79,25 @@ btn.addEventListener("click", toggle, !1);
 
 function setParams(){
     var qStr = window.location.search;
-    console.log(qStr);
     if (qStr) {
-        console.log(qStr);
         qStr = qStr.substring(1);
         var params = qStr.split('&');
         for (var i = 0; i < params.length; i++) {
             var pName = params[i].split('=')[0];
             var pVal = params[i].split('=')[1];
-            console.log(pName + "と" + pVal);
-            console.log(eval("!" + pName));
             if (eval("!" + pName) && !isNaN(pVal)) {
                 if (pName[0] == "p") {
-                    console.log("p  "+pName.substring(1));
-                    eval("OnChange_p(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
+                    var str = "OnChange_p(" + pName.substring(1) + ", 's', " + pVal + ");";
+                    console.log(str);
+                    eval(str);
                 } else if (pName[0] == "f") {
-                    console.log("f  "+pName.substring(1));
-                    eval("OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");");
+                    var str = "OnChange_f(" + pName.substring(1) + ", 's', " + pVal + ");";
+                    console.log(str);
+                    eval(str);
                 } else if (pName[0] == "i") {
-                    console.log("i  "+pName.substring(1));
-                    eval("OnChange_i(parseInt(" + pName.substring(1) + "), 's', parseInt(" + pVal + "));");
+                    var str = "OnChange_i(" + pName.substring(1) + ", 's', " + pVal + ");";
+                    console.log(str);
+                    eval(str);
                 }
             }
         }
