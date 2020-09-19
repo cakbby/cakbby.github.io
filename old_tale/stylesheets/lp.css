@@ -444,6 +444,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .heading {
         margin-top: 70px;
         font-size: 20px;
+        margin-bottom: 70px;
     }
 }
 
@@ -796,8 +797,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .background .about_container {
         width: 90%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
