@@ -497,7 +497,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .explanation {
         width: 80%;
         margin-bottom: 30px;
-        font-size: 12px;
+        font-size: 13px;
         line-height: 1.6;
     }
 }
@@ -530,7 +530,7 @@ a:active, a:hover {
 
 .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) .disc_title_and_expl {
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
 @media screen and (max-width: 480px) {
@@ -600,9 +600,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) .disc_title_and_expl p {
         margin-left: 10%;
-        width: 39%;
-        font-size: 12px;
-        float: left;
+        width: 80%;
+        font-size: 13px;
     }
 }
 
@@ -613,9 +612,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(odd) .disc_title_and_expl .mobile_disc_img {
         display: block;
-        margin-top: 30px;
-        width: 39%;
-        float: right;
+        margin: 30px 10% 0 10%;
+        width: 80%;
     }
 }
 
@@ -726,8 +724,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) .disc_title_and_expl p {
         margin-right: 10%;
-        width: 39%;
-        font-size: 12px;
+        width: 80%;
+        font-size: 13px;
         float: right;
     }
 }
@@ -739,9 +737,8 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) .disc_title_and_expl .mobile_disc_img {
         display: block;
-        margin-top: 30px;
-        width: 39%;
-        float: left;
+        margin: 30px 10% 0 10%;
+        width: 80%;
     }
 }
 
@@ -886,7 +883,7 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .LP .background .about_container .about_frame p {
         margin-bottom: 45px;
-        font-size: 12px;
+        font-size: 13px;
     }
 }
 
