@@ -136,7 +136,7 @@ var link = document.getElementById("share_link");
 link.addEventListener("click", sharelink_copy, !1);
 
 function twitterlink() {
-    document.getElementById("twitter_link").setAttribute("data-url", get_current_link());
+    document.getElementById("twitter_link").setAttribute("href", "https://twitter.com/share?ref_src=twsrc%5Etfw&text=昔ばなしにメリハリをつけてみたよ！読んでみて\n%20&lang=ja&hashtags=作る%2c壊す%2c解き明かす%2cメリハリデザイン展&url="+get_current_link());
 }
 
 var twitter = document.getElementById("twitter_link");
