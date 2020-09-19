@@ -933,7 +933,7 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .LP .background .about_container .about_frame .mobile_process_img {
+    .LP .background .gotoplay_container .gotoplay_img {
         width: 80%;
         margin: 70px auto 30px;
     }
