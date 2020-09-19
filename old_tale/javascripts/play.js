@@ -77,20 +77,15 @@ del_btn.addEventListener("click", switch_del, !1);
 var btn = document.getElementById("js__btn"), header_content = document.getElementById("mobile_header_content");
 btn.addEventListener("click", toggle, !1);
 
-function get_current_link(isAmp) {
+function get_current_link() {
     var url = location.host + location.pathname + "?";
     var n;
     var flag = 0;
-    if (isAmp) {
-        var amp = "&amp;";
-    } else {
-        var amp = "&";
-    }
     for (var i = 0; i < 8; i++) {
         n = eval("p" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1));
         if (n != 0) {
             if (flag) {
-                url += amp;
+                url += "_";
             } else {
                 flag = 1;
             }
@@ -101,7 +96,7 @@ function get_current_link(isAmp) {
         n = eval("f" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1));
         if (n != 0) {
             if (flag) {
-                url += amp;
+                url += "_";
             } else {
                 flag = 1;
             }
@@ -112,7 +107,7 @@ function get_current_link(isAmp) {
         n = eval("i" + String(i));
         if (n != 0) {
             if (flag) {
-                url += amp;
+                url += "_";
             } else {
                 flag = 1;
             }
@@ -123,7 +118,7 @@ function get_current_link(isAmp) {
 }
 
 function sharelink_copy() {
-    var url = get_current_link(0);
+    var url = get_current_link();
     var tmp = document.createElement("div");
     var pre = document.createElement("pre");
     pre.style.userSelect = "auto";
@@ -141,14 +136,14 @@ var link = document.getElementById("share_link");
 link.addEventListener("click", sharelink_copy, !1);
 
 function twitterlink() {
-    document.getElementById("twitter_link").setAttribute("href", "https://twitter.com/share?ref_src=twsrc%5Etfw&text=昔ばなしにメリハリをつけてみたよ！読んでみて\n%20&lang=ja&hashtags=作る%2c壊す%2c解き明かす%2cメリハリデザイン展&url="+get_current_link(1));
+    document.getElementById("twitter_link").setAttribute("href", "https://twitter.com/share?ref_src=twsrc%5Etfw&text=昔ばなしにメリハリをつけてみたよ！読んでみて\n%20&lang=ja&hashtags=作る%2c壊す%2c解き明かす%2cメリハリデザイン展&url="+get_current_link());
 }
 
 var twitter = document.getElementById("twitter_link");
 twitter.addEventListener("click", twitterlink, !1);
 
 function facebooklink() {
-    document.getElementById("facebook_link").setAttribute("href", "http://www.facebook.com/share.php?href="+get_current_link(0));
+    document.getElementById("facebook_link").setAttribute("href", "http://www.facebook.com/share.php?href="+get_current_link());
 }
 
 var facebook = document.getElementById("facebook_link");
@@ -158,7 +153,7 @@ function setParams() {
     var qStr = window.location.search;
     if (qStr) {
         qStr = qStr.substring(1);
-        var params = qStr.split('&');
+        var params = qStr.split('_');
         for (var i = 0; i < params.length; i++) {
             var pName = params[i].split('=')[0];
             var pVal = params[i].split('=')[1];
