@@ -489,8 +489,7 @@ a:active, a:hover {
 .Play .background .share_container {
     width: 80%;
     margin: 7% auto 10%;
-    background: #888 url("../images/background3.jpg");
-    background-blend-mode: screen;
+    background: url("../images/background3-white.jpg");
     border: solid #b51329 10px; 
     box-sizing: border-box;
 }
