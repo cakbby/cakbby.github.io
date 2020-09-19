@@ -136,7 +136,7 @@ var link = document.getElementById("share_link");
 link.addEventListener("click", sharelink_copy, !1);
 
 function twitterlink() {
-    document.getElementById("twitter_link").setAttribute("data-url", get_current_link());
+    //document.getElementById("twitter_link").setAttribute("data-url", get_current_link());
 }
 
 var twitter = document.getElementById("twitter_link");
