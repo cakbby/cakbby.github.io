@@ -45,7 +45,9 @@ function OnChange_p(id, to, a) {
     eval("document.getElementById(id).innerHTML = p_text" + id + "[p" + id + "];");
 }
 function OnChange_f(id, to, a) {
+    console.log("f11 is " + String(f11));
     eval("f" + id + "=change_n(f" + id + ", ff.length, to, a);");
+    console.log("f11 is " + String(f11));
     eval("document.getElementById(id).style.fontFamily=ff[f" + id + "];");
     eval("document.getElementById(id).style.fontWeight=fw[f" + id + "];");
 }
