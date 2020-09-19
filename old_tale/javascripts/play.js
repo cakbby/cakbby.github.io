@@ -92,7 +92,28 @@ function sharelink_copy() {
             url += "p" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1) + "=" + n;
         }
     }
-    console.log(url);
+    for (var i = 0; i < 9; i++) {
+        n = eval("f" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1));
+        if (n != 0) {
+            if (flag) {
+                url += "&";
+            } else {
+                flag = 1;
+            }
+            url += "f" + String(Math.floor(i / 2) + 1) + String((i % 2) + 1) + "=" + n;
+        }
+    }
+    for (var i = 1; i < 5; i++) {
+        n = eval("i" + String(i));
+        if (n != 0) {
+            if (flag) {
+                url += "&";
+            } else {
+                flag = 1;
+            }
+            url += "i" + String(i) + "=" + n;
+        }
+    }
     var tmp = document.createElement("div");
     var pre = document.createElement("pre");
     pre.style.userSelect = "auto";
@@ -103,6 +124,7 @@ function sharelink_copy() {
     document.getSelection().selectAllChildren(tmp);
     document.execCommand("copy");
     document.body.removeChild(tmp);
+    document.getElementById("share_link_tet").textContent = "コピーしました。"
 }
 
 var link = document.getElementById("share_link");
@@ -130,8 +152,6 @@ function setParams() {
 }
 
 window.onload = function () {
-    console.log("start setParams");
     setParams();
-    console.log("end setParams");
     //const spinner = document.getElementById('loading'); spinner.classList.add('loaded'); document.body.className = "";
 };
