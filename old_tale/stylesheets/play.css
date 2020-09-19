@@ -506,6 +506,7 @@ a:active, a:hover {
     display: block;
     margin: 3% 33%;
     overflow: hidden;
+    cursor:pointer
 }
 
 .Play .background .share_container .ico_container img{
