@@ -725,7 +725,7 @@ a:active, a:hover {
     .LP .disc_container .disc_frame .disc_exp_container:nth-of-type(even) .disc_title_and_expl p {
         margin-right: 10%;
         width: 80%;
-        font-size: 12px;
+        font-size: 13px;
         float: right;
     }
 }
@@ -801,8 +801,7 @@ a:active, a:hover {
 
 .LP .background .about_container .about_frame {
     margin: 2vw;
-    background: #888 url("../images/background2.jpg");
-    background-blend-mode: screen;
+    background: url("../images/background2-white.jpg");
     border: solid #b51329 7px;
     box-sizing: border-box;
 }
