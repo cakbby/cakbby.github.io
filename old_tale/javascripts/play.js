@@ -142,6 +142,13 @@ function twitterlink() {
 var twitter = document.getElementById("twitter_link");
 twitter.addEventListener("click", twitterlink, !1);
 
+function facebooklink() {
+    document.getElementById("facebook_link").setAttribute("href", "http://www.facebook.com/share.php?href="+get_current_link());
+}
+
+var facebook = document.getElementById("facebook_link");
+facebook.addEventListener("click", facebooklink, !1);
+
 function setParams() {
     var qStr = window.location.search;
     if (qStr) {
