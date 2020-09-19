@@ -42,8 +42,8 @@ var p_text42 = new Array("　うさぎが目を覚ましたとき、すでにか
     "<span style='color=red'>うさぎ</span>「う～んよく寝た...ってえ!?もう夕方!?じゃああの時からずっと寝てたってこと!?」<br>あせるうさぎが遠くに目をやると…<br><span style='color=green'>かめ</span>「ふんぬ」カメさんはあっという間にゴールしました。<br><span style='color=red'>うさぎ</span>「うそ…」<br>これにはさすがのうさぎも呆然としてしまったようです。",
     "うさぎが目を覚ましたのは既に夕刻であった。<br><span style='color=red'>うさぎ</span>「もう夕方じゃん!? 何やってんの俺!? てか堅次郎めっちゃ進んでんじゃん!? 無理無理無理!!!! 無理だってこっから追い越すなんて!!!」<br>「ふり絞れ‼これが最後でいい‼とにかくありったけの力を込めるんだ‼」<br>　気の遠くなるような一瞬、その足はゴールに--届いた");
 
-var p_text51 = new Array("こうしてうさぎさんは、かめさんにかけっこで負けました。でも不思議と悔しくはなかったようです。<br>うさぎさんはかめさんを甘くみて寝てしまったけれど、どんな相手でも全力で戦うことがたいせつだと、気づいたからです。<br><br>「かめさん、次はぜったい勝つよ。もちろん、途中で寝ずにね」<br>「もちろん受けて立つよ。ぼくだって負けていられないさ」<br><br>ふたりはまえよりもずっとなかよしになり、よきライバルになりましたとさ<br><br><br><span style='font-size: 130%'>めでたしめでたし</span>",
-    "こうしてうさぎはかめに負けました。<br><br>油断大敵ってことだね！<br><br><br><span style='font-size:130%'>おしまい</span>");
+var p_text51 = new Array("　こうしてうさぎさんは、かめさんにかけっこで負けました。でも不思議と悔しくはなかったようです。<br>うさぎさんはかめさんを甘くみて寝てしまったけれど、どんな相手でも全力で戦うことがたいせつだと、気づいたからです。<br><br>「かめさん、次はぜったい勝つよ。もちろん、途中で寝ずにね」<br>「もちろん受けて立つよ。ぼくだって負けていられないさ」<br><br>ふたりはまえよりもずっとなかよしになり、よきライバルになりましたとさ<br><br><br><span style='font-size: 130%'>めでたしめでたし</span>",
+    "　こうしてうさぎはかめに負けました。<br><br>油断大敵ってことだね！<br><br><br><span style='font-size:130%'>おしまい</span>");
 
 var ff = new Array("Noto Sans JP, sans-serif", "Sawarabi Mincho, sans-serif", "source-han-sans-japanese, sans-serif", "ta-f1blockline, source-han-sans-japanese, sans-serif", "Noto Serif JP, sans-serif", "dnp-shuei-4gob-std, sans-serif", "tbcinergothic-std, sans-serif", "ro-brush-std, sans-serif");
 var fw = new Array("250", "200", "700", "900", "400", "700", "600", "400");
@@ -169,7 +169,7 @@ var twitter = document.getElementById("twitter_link");
 twitter.addEventListener("click", twitterlink, !1);
 
 function facebooklink() {
-    document.getElementById("facebook_link").setAttribute("href", "http://www.facebook.com/share.php?href="+get_current_link());
+    document.getElementById("facebook_link").setAttribute("href", "http://www.facebook.com/share.php?u="+get_current_link());
 }
 
 var facebook = document.getElementById("facebook_link");
@@ -198,5 +198,4 @@ function setParams() {
 
 window.onload = function () {
     setParams();
-    //const spinner = document.getElementById('loading'); spinner.classList.add('loaded'); document.body.className = "";
 };
