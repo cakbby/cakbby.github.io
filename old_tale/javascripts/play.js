@@ -136,8 +136,6 @@ var link = document.getElementById("share_link");
 link.addEventListener("click", sharelink_copy, !1);
 
 function twitterlink() {
-    document.getElementById("twitter_link").setAttribute("data-text", "昔ばなしにメリハリをつけてみたよ！読んでみて");
-    document.getElementById("twitter_link").setAttribute("data-hashtags", "作る,壊す,解き明かす,メリハリ×デザイン展");
     document.getElementById("twitter_link").setAttribute("data-url", get_current_link());
 }
 
