@@ -77,7 +77,7 @@ del_btn.addEventListener("click", switch_del, !1);
 var btn = document.getElementById("js__btn"), header_content = document.getElementById("mobile_header_content");
 btn.addEventListener("click", toggle, !1);
 
-function sharelink_copy() {
+function get_current_link() {
     var url = location.host + location.pathname + "?";
     var n;
     var flag = 0;
@@ -114,6 +114,11 @@ function sharelink_copy() {
             url += "i" + String(i) + "=" + n;
         }
     }
+    return url;
+}
+
+function sharelink_copy() {
+    var url = get_current_link();
     var tmp = document.createElement("div");
     var pre = document.createElement("pre");
     pre.style.userSelect = "auto";
@@ -129,6 +134,13 @@ function sharelink_copy() {
 
 var link = document.getElementById("share_link");
 link.addEventListener("click", sharelink_copy, !1);
+
+function twitterlink() {
+    document.getElementById("twitter_link").setAttribute("data-url", get_current_link());
+}
+
+var twitter = document.getElementById("twitter_link");
+twitter.addEventListener("click", twitterlink, !1);
 
 function setParams() {
     var qStr = window.location.search;
