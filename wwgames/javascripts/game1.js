@@ -85,18 +85,18 @@ function next_3() {
 function OnChange_s(name, select) {
     var areas = document.getElementsByName(name);
 
-    if (select==1) {
-        areas[0].style.display = 'block';
-        areas[1].style.color = "#F1B61B";
+    if (select == 1) {
         document.getElementById(name).style.fill = "#F1B61B";
-        // document.getElementById(name).style.stroke = "#F1B61B";
-        // document.getElementById(name).style.strokeWidth = "1";
+        areas[0].style.display = 'block';
+        document.getElementById(name).style.stroke = "#F1B61B";
+        areas[1].style.color = "#F1B61B";
+        document.getElementById(name).style.strokeWidth = "1";
     } else {
-        areas[0].style.display = 'none';
-        areas[1].style.color = "#4A4A4A";
         document.getElementById(name).style.fill = "#EEE";
-        // document.getElementById(name).style.stroke = "#EEE";
-        // document.getElementById(name).style.strokeWidth = "1";
+        areas[0].style.display = 'none';
+        document.getElementById(name).style.stroke = "#EEE";
+        areas[1].style.color = "#4A4A4A";
+        document.getElementById(name).style.strokeWidth = "1";
     }
 }
 
@@ -122,17 +122,17 @@ function OnChange_s_area(name) {
         var areas = document.getElementsByName(name);
 
         if (areas[0].style.display == 'none' || areas[0].style.display == "") {
-            areas[0].style.display = 'block';
-            areas[1].style.color = "#F1B61B";
             document.getElementById(name).style.fill = "#F1B61B";
-            // document.getElementById(name).style.stroke = "#F1B61B";
-            // document.getElementById(name).style.strokeWidth = "1";
+            areas[0].style.display = 'block';
+            document.getElementById(name).style.stroke = "#F1B61B";
+            areas[1].style.color = "#F1B61B";
+            document.getElementById(name).style.strokeWidth = "1";
         } else {
-            areas[0].style.display = 'none';
-            areas[1].style.color = "#4A4A4A";
             document.getElementById(name).style.fill = "#EEE";
-            // document.getElementById(name).style.stroke = "#EEE";
-            // document.getElementById(name).style.strokeWidth = "1";
+            areas[0].style.display = 'none';
+            document.getElementById(name).style.stroke = "#EEE";
+            areas[1].style.color = "#4A4A4A";
+            document.getElementById(name).style.strokeWidth = "1";
 
             var all = document.getElementsByName(name.substring(0,2)+"all");
             all[1].style.color = "#4A4A4A";
