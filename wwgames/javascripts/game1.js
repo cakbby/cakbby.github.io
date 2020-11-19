@@ -175,7 +175,7 @@ function getParamedResultLink() {
     var ps = location.pathname.split('/');
     var pagename = ps[ps.length - 1];
     console.log(pagename);
-    var url = location.protocol + "//" + location.host + location.pathname.slice(0,-(pagename.length-1))+ "result.html" + "?";
+    var url = location.protocol + "//" + location.host + location.pathname.slice(0,-pagename.length)+ "result.html" + "?";
     
     url += "m=" + my_chihou.substring(2) + "_";
 
