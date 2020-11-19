@@ -317,7 +317,6 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .Play .background .scene-2 .select_frame{
         height: 40vh;
-        overflow: auto;
     }
 }
 
@@ -497,7 +496,6 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .Play .background .scene-3 .select_frame{
         height: 40vh;
-        overflow: auto;
     }
 }
 
