@@ -89,15 +89,15 @@ function OnChange_s(name, select) {
     if (select == 1) {
         areasvg.style.fill = "#F1B61B";
         areas[0].style.display = 'block';
-        areasvg.style.stroke = "#F1B61B";
         areas[1].style.color = "#F1B61B";
-        areasvg.style.strokeWidth = "1";
+        // areasvg.style.stroke = "#F1B61B";
+        // areasvg.style.strokeWidth = "1";
     } else {
         areasvg.style.fill = "#EEE";
         areas[0].style.display = 'none';
-        areasvg.style.stroke = "#EEE";
         areas[1].style.color = "#4A4A4A";
-        areasvg.style.strokeWidth = "1";
+        // areasvg.style.stroke = "#EEE";
+        // areasvg.style.strokeWidth = "1";
     }
 }
 
@@ -126,15 +126,15 @@ function OnChange_s_area(name) {
         if (areas[0].style.display == 'none' || areas[0].style.display == "") {
             areasvg.style.fill = "#F1B61B";
             areas[0].style.display = 'block';
-            areasvg.style.stroke = "#F1B61B";
             areas[1].style.color = "#F1B61B";
-            areasvg.style.strokeWidth = "1";
+            // areasvg.style.stroke = "#F1B61B";
+            // areasvg.style.strokeWidth = "1";
         } else {
             areasvg.style.fill = "#EEE";
             areas[0].style.display = 'none';
-            areasvg.style.stroke = "#EEE";
             areas[1].style.color = "#4A4A4A";
-            areasvg.style.strokeWidth = "1";
+            // areasvg.style.stroke = "#EEE";
+            // areasvg.style.strokeWidth = "1";
 
             var all = document.getElementsByName(name.substring(0,2)+"all");
             all[1].style.color = "#4A4A4A";
