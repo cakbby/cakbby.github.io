@@ -78,6 +78,7 @@ a:active, a:hover {
 }
 
 .Play .mobile_space {
+    background-color: #F1B61B;
     width:100%;
     height: 45px;
 }
@@ -118,6 +119,7 @@ a:active, a:hover {
         line-height: 100px;
         height: 100px;
         margin-left: 0;
+        text-align: center;
     }
 }
 
