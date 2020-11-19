@@ -84,19 +84,20 @@ function next_3() {
 
 function OnChange_s(name, select) {
     var areas = document.getElementsByName(name);
+    var areasvg = document.getElementById(name);
 
     if (select == 1) {
-        document.getElementById(name).style.fill = "#F1B61B";
+        areasvg.style.fill = "#F1B61B";
         areas[0].style.display = 'block';
-        document.getElementById(name).style.stroke = "#F1B61B";
+        areasvg.style.stroke = "#F1B61B";
         areas[1].style.color = "#F1B61B";
-        document.getElementById(name).style.strokeWidth = "1";
+        areasvg.style.strokeWidth = "1";
     } else {
-        document.getElementById(name).style.fill = "#EEE";
+        areasvg.style.fill = "#EEE";
         areas[0].style.display = 'none';
-        document.getElementById(name).style.stroke = "#EEE";
+        areasvg.style.stroke = "#EEE";
         areas[1].style.color = "#4A4A4A";
-        document.getElementById(name).style.strokeWidth = "1";
+        areasvg.style.strokeWidth = "1";
     }
 }
 
@@ -120,19 +121,20 @@ function OnChange_s_area(name) {
         }
     } else {
         var areas = document.getElementsByName(name);
+        var areasvg = document.getElementById(name);
 
         if (areas[0].style.display == 'none' || areas[0].style.display == "") {
-            document.getElementById(name).style.fill = "#F1B61B";
+            areasvg.style.fill = "#F1B61B";
             areas[0].style.display = 'block';
-            document.getElementById(name).style.stroke = "#F1B61B";
+            areasvg.style.stroke = "#F1B61B";
             areas[1].style.color = "#F1B61B";
-            document.getElementById(name).style.strokeWidth = "1";
+            areasvg.style.strokeWidth = "1";
         } else {
-            document.getElementById(name).style.fill = "#EEE";
+            areasvg.style.fill = "#EEE";
             areas[0].style.display = 'none';
-            document.getElementById(name).style.stroke = "#EEE";
+            areasvg.style.stroke = "#EEE";
             areas[1].style.color = "#4A4A4A";
-            document.getElementById(name).style.strokeWidth = "1";
+            areasvg.style.strokeWidth = "1";
 
             var all = document.getElementsByName(name.substring(0,2)+"all");
             all[1].style.color = "#4A4A4A";
