@@ -172,7 +172,7 @@ function returnto_2or3() {
 }
 
 function getParamedResultLink() {
-    var ps = location.pathname.split('/');
+    var ps = location.url.split('/');
     if (ps[ps.length-1] == "") {
         var url = location.url + "result.html" + "?";
     } else {
