@@ -89,14 +89,14 @@ function OnChange_s(name, select) {
         areas[0].style.display = 'block';
         areas[1].style.color = "#F1B61B";
         document.getElementById(name).style.fill = "#F1B61B";
-        document.getElementById(name).style.stroke = "#F1B61B";
-        document.getElementById(name).style.strokeWidth = "1";
+        // document.getElementById(name).style.stroke = "#F1B61B";
+        // document.getElementById(name).style.strokeWidth = "1";
     } else {
         areas[0].style.display = 'none';
         areas[1].style.color = "#4A4A4A";
         document.getElementById(name).style.fill = "#EEE";
-        document.getElementById(name).style.stroke = "#EEE";
-        document.getElementById(name).style.strokeWidth = "1";
+        // document.getElementById(name).style.stroke = "#EEE";
+        // document.getElementById(name).style.strokeWidth = "1";
     }
 }
 
@@ -104,15 +104,15 @@ function OnChange_s_area(name) {
     if (name.substring(2) == "all") {
         var areas = document.getElementsByName(name);
         if (areas[0].style.display == 'none' || areas[0].style.display == "") {
-            areas[0].style.display = 'block';
             areas[1].style.color = "#F1B61B";
+            areas[0].style.display = 'block';
             areas[1].textContent = "すべて解除";
             for (let i = 1; i <= Chihou_areanum[parseInt(name.charAt(0))]; i++) {
                 OnChange_s(name.substring(0,2)+i.toString(),1);
             }
         } else {
-            areas[0].style.display = 'none';
             areas[1].style.color = "#4A4A4A";
+            areas[0].style.display = 'none';
             areas[1].textContent = "すべて選択";
             for (let i = 1; i <= Chihou_areanum[parseInt(name.charAt(0))]; i++) {
                 OnChange_s(name.substring(0,2)+i.toString(),0);
@@ -125,18 +125,18 @@ function OnChange_s_area(name) {
             areas[0].style.display = 'block';
             areas[1].style.color = "#F1B61B";
             document.getElementById(name).style.fill = "#F1B61B";
-            document.getElementById(name).style.stroke = "#F1B61B";
-            document.getElementById(name).style.strokeWidth = "1";
+            // document.getElementById(name).style.stroke = "#F1B61B";
+            // document.getElementById(name).style.strokeWidth = "1";
         } else {
             areas[0].style.display = 'none';
             areas[1].style.color = "#4A4A4A";
             document.getElementById(name).style.fill = "#EEE";
-            document.getElementById(name).style.stroke = "#EEE";
-            document.getElementById(name).style.strokeWidth = "1";
+            // document.getElementById(name).style.stroke = "#EEE";
+            // document.getElementById(name).style.strokeWidth = "1";
 
             var all = document.getElementsByName(name.substring(0,2)+"all");
-            all[0].style.display = 'none';
             all[1].style.color = "#4A4A4A";
+            all[0].style.display = 'none';
             all[1].textContent = "すべて選択";
         }
     }
