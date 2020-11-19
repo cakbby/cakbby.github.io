@@ -114,7 +114,10 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .top_container .title{
-        font-size: 24px;
+        font-size: 26px;
+        line-height: 100px;
+        height: 100px;
+        margin-left: 0;
     }
 }
 
@@ -138,9 +141,11 @@ a:active, a:hover {
     color: white;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     .Play .background .scenes-1 .explain {
-        margin-bottom: 120px;
+        line-height: 20px;
+        height: 20px;
+        font-size: 18px;
     }
 }
 
@@ -169,6 +174,7 @@ a:active, a:hover {
     .Play .background .scene-1 .choice_frame .chihou_ul{
         display: block;
         margin: 20px 10% 20px;
+        width: auto;
     }
 }
 
@@ -181,7 +187,8 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .scene-1 .choice_frame .chihou_ul .chihou{
-        border-right: 17.32px solid #ff3355;
+        display: block;
+        margin: 20px 10% 20px;
     }
 }
 
@@ -194,7 +201,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .scene-1 .choice_frame .chihou_ul .chihou .r_chihou{
-        
+        height: 20px;
     }
 }
 
@@ -216,7 +223,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .scene-1 .choice_frame .chihou_ul .chihou_name{
-        
+        top: 10px;
     }
 }
 
