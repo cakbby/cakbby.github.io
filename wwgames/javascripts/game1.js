@@ -33,6 +33,7 @@ function next_2() {
             c[0].style.display = 'none';
             c[0].style.borderColor = '#F1B61B';
             c[1].style.color = '#4A4A4A';
+            document.getElementById(c_name).removeAttribute("fill");
             document.getElementById(c_name).setAttribute("fill", "#EEE");
         }
         var c_name = "c-" + my_chihou.substring(2);
@@ -40,6 +41,7 @@ function next_2() {
         c[0].style.display = 'block';
         c[0].style.borderColor = '#888';
         c[1].style.color = '#888';
+        document.getElementById(c_name).removeAttribute("fill");
         document.getElementById(c_name).setAttribute("fill", "#E88326");
 
         document.getElementById("scene-2").style.display = "block";
@@ -51,10 +53,12 @@ function OnChange_c_chihou(name) {
     if (chihous[0].style.display == 'none' || chihous[0].style.display == "") {
         chihous[0].style.display = 'block';
         chihous[1].style.color = "#F1B61B";
+        document.getElementById(name).removeAttribute("fill");
         document.getElementById(name).setAttribute("fill", "#F1B61B");
     } else if (chihous[0].style.display == 'block' && chihous[1].style.color != "rgb(136, 136, 136)"){
         chihous[0].style.display = 'none';
         chihous[1].style.color = "#4A4A4A";
+        document.getElementById(name).removeAttribute("fill");
         document.getElementById(name).setAttribute("fill", "#EEE");
     }
 }
@@ -84,6 +88,10 @@ function next_3() {
 
 function OnChange_s(name, select) {
     var areas = document.getElementsByName(name);
+    document.getElementById(name).removeAttribute("fill");
+    document.getElementById(name).removeAttribute("stroke");
+    document.getElementById(name).removeAttribute("stroke-width");
+
     if (select==1) {
         areas[0].style.display = 'block';
         areas[1].style.color = "#F1B61B";
@@ -119,6 +127,9 @@ function OnChange_s_area(name) {
         }
     } else {
         var areas = document.getElementsByName(name);
+        document.getElementById(name).removeAttribute("fill");
+        document.getElementById(name).removeAttribute("stroke");
+        document.getElementById(name).removeAttribute("stroke-width");
         if (areas[0].style.display == 'none' || areas[0].style.display == "") {
             areas[0].style.display = 'block';
             areas[1].style.color = "#F1B61B";
