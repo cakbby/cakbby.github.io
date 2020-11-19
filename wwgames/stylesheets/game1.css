@@ -296,7 +296,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .scenes-2 .explain {
-        line-height: 22px;
+        line-height: 20px;
         height: fit-content;
         font-size: 15px;
         text-align: center;
@@ -476,7 +476,7 @@ a:active, a:hover {
 
 @media screen and (max-width: 480px) {
     .Play .background .scenes-3 .explain {
-        line-height: 22px;
+        line-height: 20px;
         height: fit-content;
         font-size: 15px;
         text-align: center;
