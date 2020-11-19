@@ -173,13 +173,16 @@ function returnto_2or3() {
 
 function getParamedResultLink() {
     var ps = location.href.split('/');
-    if (ps[ps.length-1] == "") {
+    if (ps[-1] == "") {
         var url = location.href + "result.html" + "?";
     } else {
         var url = location.href.substring(0, -ps[ps.length-1].length) + "result.html" + "?";
     }
     url += "m=" + my_chihou.substring(2) + "_";
 
+    if (selected_area.length == 0) {
+        return url;
+    }
     url += "sa=";
     for (let i = 0; i < selected_area.length-1; i++) {
         url += selected_area[i].charAt(0);
