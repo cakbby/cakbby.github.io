@@ -172,11 +172,11 @@ function returnto_2or3() {
 }
 
 function getParamedResultLink() {
-    var ps = location.url.split('/');
+    var ps = location.href.split('/');
     if (ps[ps.length-1] == "") {
-        var url = location.url + "result.html" + "?";
+        var url = location.href + "result.html" + "?";
     } else {
-        var url = location.url.substring(0, -ps[ps.length-1].length) + "result.html" + "?";
+        var url = location.href.substring(0, -ps[ps.length-1].length) + "result.html" + "?";
     }
     url += "m=" + my_chihou.substring(2) + "_";
 
