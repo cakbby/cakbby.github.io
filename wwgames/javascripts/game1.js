@@ -172,7 +172,10 @@ function returnto_2or3() {
 }
 
 function getParamedResultLink() {
-    var url = location.protocol + "//" + location.host + location.pathname.slice(0,-10)+ "result.html" + "?";
+    var ps = location.pathname.split('/');
+    var pagename = ps[ps.length - 1];
+    console.log(pagename);
+    var url = location.protocol + "//" + location.host + location.pathname.slice(0,-(pagename.length-1))+ "result.html" + "?";
     
     url += "m=" + my_chihou.substring(2) + "_";
 
