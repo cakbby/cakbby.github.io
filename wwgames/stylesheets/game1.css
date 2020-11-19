@@ -1,0 +1,811 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% */
+}
+
+body {
+    
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+.Play {
+    max-width: 1500px;
+    font-family: "Noto Sans JP", "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif
+}
+
+.Play html, .Play body, .Play div, .Play span, .Play applet, .Play object, .Play iframe,
+.Play h1, .Play h2, .Play h3, .Play h4, .Play h5, .Play h6, .Play p, .Play blockquote, .Play pre,
+.Play a, .Play abbr, .Play acronym, .Play address, .Play big, .Play cite, .Play code, .Play del,
+.Play dfn, .Play em, .Play img, .Play ins, .Play kbd, .Play q, .Play s, .Play samp, .Play small,
+.Play strike, .Play strong, .Play sub, .Play sup, .Play tt, .Play var, .Play b, .Play u, .Play i,
+.Play center, .Play dl, .Play dt, .Play dd, .Play ol, .Play ul, .Play li,
+.Play fieldset,
+.Play form,
+.Play label,
+.Play legend,
+.Play table,
+.Play caption,
+.Play tbody,
+.Play tfoot,
+.Play thead,
+.Play tr,
+.Play th,
+.Play td,
+.Play article,
+.Play aside,
+.Play canvas,
+.Play details,
+.Play embed,
+.Play figure,
+.Play figcaption,
+.Play footer,
+.Play header,
+.Play hgroup,
+.Play menu,
+.Play nav,
+.Play output,
+.Play ruby,
+.Play section,
+.Play summary,
+.Play time,
+.Play mark,
+.Play audio,
+.Play video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.Play .mobile_space {
+    width:100%;
+    height: 45px;
+}
+
+.Play .background {
+    position: relative;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #F1B61B;
+    overflow: hidden;
+}
+
+.Play .background .top_container {
+    display: block;
+    margin: auto;
+    margin-left: 7.5%;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .top_container {
+        margin-left: 30px;
+    }
+}
+
+.Play .background .top_container .title{
+    height: 140px;
+    line-height: 140px;
+    font-family: "Noto Sans JP";
+    font-size: 36px;
+    font-weight: 600;
+    margin-left: -4px;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .top_container .title{
+        font-size: 24px;
+    }
+}
+
+.Play .background .scene-1 {
+    width: 85%;
+    margin: 0px auto 100px;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 {
+        
+    }
+}
+
+.Play .background .scene-1 .explain {
+    height: 30px;
+    line-height: 30px;
+    font-family: "Noto Sans JP";
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes-1 .explain {
+        margin-bottom: 120px;
+    }
+}
+
+.Play .background .scene-1 .choice_frame {
+    overflow: hidden;
+    margin: 10px auto;
+    margin-right: 0;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 .choice_frame{
+        height: 50vh;
+        overflow: auto;
+    }
+}
+
+.Play .background .scene-1 .choice_frame .chihou_ul{
+    list-style: none;
+    display: flex;
+    margin: 30px 5% 30px;
+    width: 90%;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 .choice_frame .chihou_ul{
+        display: block;
+        margin: 20px 10% 20px;
+    }
+}
+
+.Play .background .scene-1 .choice_frame .chihou_ul .chihou{
+    display: flex;
+    position: relative;
+    flex: 1;
+}
+
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 .choice_frame .chihou_ul .chihou{
+        border-right: 17.32px solid #ff3355;
+    }
+}
+
+.Play .background .scene-1 .choice_frame .chihou_ul .chihou .r_chihou{
+    width: 100%;
+    height: 40px;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 .choice_frame .chihou_ul .chihou .r_chihou{
+        
+    }
+}
+
+.Play .background .scene-1 .choice_frame .chihou_ul .chihou .chihou_name{
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
+    top: 0; left: 10%;
+    color: #4A4A4A;
+    width: 80%;
+    height: 100%;
+    background: #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-1 .choice_frame .chihou_ul .chihou_name{
+        
+    }
+}
+
+.Play .background .scene-1 .button_ul{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 30px 10% 20px;
+}
+
+.Play .background .scene-1 .button_ul .button{
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans JP";
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #4A4A4A;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.Play .background .scene-1 .button_ul .button:last-child{
+    margin-right: 0;
+}
+
+.Play .background .scene-1 .error {
+    display: none;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    font-family: "Noto Sans JP";
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+.Play .background .scene-2 {
+    width: 85%;
+    margin: 0px auto 100px;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-2 {
+        
+    }
+}
+
+.Play .background .scene-2 .explain {
+    height: 30px;
+    line-height: 30px;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes-2 .explain {
+        margin-bottom: 120px;
+    }
+}
+
+.Play .background .scene-2 .select_frame {
+    overflow: hidden;
+    display: flex;
+    margin: 10px auto;
+    margin-right: 0;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-2 .select_frame{
+        height: 50vh;
+        overflow: auto;
+    }
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul{
+    list-style: none;
+    margin-right: 0;
+    margin-left: auto;
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+	background: #f2f2f2;
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background:#888;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-2 .select_frame .chihou_ul{
+        display: block;
+        margin: 20px 10% 20px;
+    }
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul .chihou{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-2 .select_frame .chihou_ul .chihou{
+        
+    }
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul .chihou .chihou_box{
+    display: block;
+    margin: auto 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul .chihou .chihou_check{
+    display: none;
+    position : absolute;
+    top: 22px; left: 24px;
+    width: 9px;
+    height: 16px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid #F1B61B;
+    border-right: 3px solid #F1B61B;
+}
+
+.Play .background .scene-2 .select_frame .chihou_ul .chihou .chihou_name{
+    position: relative;
+    font-family: "Noto Sans JP";
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-2 .select_frame .chihou_ul .chihou .chihou_name{
+        
+    }
+}
+
+.Play .background .scene-2 .button_ul{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 30px 10% 20px;
+}
+
+.Play .background .scene-2 .button_ul .button{
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans JP";
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #4A4A4A;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.Play .background .scene-2 .button_ul .button:last-child{
+    margin-right: 0;
+}
+
+.Play .background .scene-3 {
+    width: 85%;
+    margin: 0px auto 100px;
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 {
+        
+    }
+}
+
+.Play .background .scene-3 .explain {
+    height: 30px;
+    line-height: 30px;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes-3 .explain {
+        margin-bottom: 120px;
+    }
+}
+
+.Play .background .scene-3 .select_frame {
+    overflow: hidden;
+    display: none;
+    margin: 10px auto;
+    margin-right: 0;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 .select_frame{
+        height: 50vh;
+        overflow: auto;
+    }
+}
+
+.Play .background .scene-3 .select_frame .area_ul{
+    list-style: none;
+    margin-right: 0;
+    margin-left: auto;
+    width: 50%;
+    height: 300px;
+    overflow: auto;
+}
+
+.Play .background .scene-3 .select_frame .area_ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Play .background .scene-3 .select_frame .area_ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+	background: #f2f2f2;
+}
+
+.Play .background .scene-3 .select_frame .area_ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background:#888;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 .select_frame .area_ul{
+        display: block;
+        margin: 20px 10% 20px;
+    }
+}
+
+.Play .background .scene-3 .select_frame .area_ul .area{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 .select_frame .area_ul .area{
+        
+    }
+}
+
+.Play .background .scene-3 .select_frame .area_ul .area .area_box{
+    display: block;
+    margin: auto 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Play .background .scene-3 .select_frame .area_ul .area .area_check{
+    display: none;
+    position : absolute;
+    top: 22px; left: 24px;
+    width: 9px;
+    height: 16px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid #F1B61B;
+    border-right: 3px solid #F1B61B;
+}
+
+.Play .background .scene-3 .select_frame .area_ul .area .area_name{
+    position: relative;
+    font-family: "Noto Sans JP";
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 .select_frame .area_ul .area .area_name{
+        
+    }
+}
+
+.Play .background .scene-3 .button_ul{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 30px 10% 20px;
+}
+
+.Play .background .scene-3 .button_ul .button{
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans JP";
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #4A4A4A;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.Play .background .scene-3 .button_ul .button:last-child{
+    margin-right: 0;
+}
+
+.Play .background .scene-result {
+    width: 85%;
+    margin: 0px auto 100px;
+    display: block;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-result {
+        
+    }
+}
+
+.Play .background .scene-result .explain {
+    height: 80px;
+    line-height: 80px;
+    font-family: "Noto Sans JP";
+    font-size: 60px;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .Play .background .scenes-4 .explain {
+        margin-bottom: 120px;
+    }
+}
+
+.Play .background .scene-result svg {
+    margin: 20px 25%;
+}
+
+.Play .background .scene-result .select_frame {
+    overflow: hidden;
+    display: flex;
+    margin: 10px auto;
+    margin-right: 0;
+    background-color: white;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-result .select_frame{
+        height: 50vh;
+        overflow: auto;
+    }
+}
+
+.Play .background .scene-result .select_frame .area_ul{
+    list-style: none;
+    margin-left: 5%;
+    width: 90%;
+    height: 300px;
+    overflow: auto;
+}
+
+.Play .background .scene-result .select_frame .area_ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Play .background .scene-result .select_frame .area_ul::-webkit-scrollbar-track {
+    border-radius: 10px;
+	background: #f2f2f2;
+}
+
+.Play .background .scene-result .select_frame .area_ul::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+	background:#888;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-result .select_frame .area_ul{
+        display: block;
+        margin: 20px 10% 20px;
+    }
+}
+
+.Play .background .scene-result .select_frame .area_ul .area{
+    display: flex;
+    position: relative;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-result .select_frame .area_ul .area{
+        
+    }
+}
+
+.Play .background .scene-result .select_frame .area_ul .area .area_box{
+    display: block;
+    margin: auto 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #888;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Play .background .scene-result .select_frame .area_ul .area .area_check{
+    display: none;
+    position : absolute;
+    top: 22px; left: 24px;
+    width: 9px;
+    height: 16px;
+    transform: rotate(40deg);
+    border-bottom: 3px solid #F1B61B;
+    border-right: 3px solid #F1B61B;
+}
+
+.Play .background .scene-result .select_frame .area_ul .area .area_name{
+    position: relative;
+    font-family: "Noto Sans JP";
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 500;
+    color: #4A4A4A;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-result .select_frame .area_ul .area .area_name{
+        
+    }
+}
+
+.Play .background .scene-result .share_container {
+    overflow: hidden;
+    width: 70%;
+    background: #FFFFFFBB;
+    margin: 50px auto;
+}
+
+.Play .background .scene-result .share_container p{
+    font-family: "Noto Sans JP";
+    height: 40px;
+    line-height: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #4A4A4A;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.Play .background .scene-result .share_container p img{
+    margin-right: 5px;
+}
+
+.Play .background .scene-result .share_container p span{
+    color: #1DA1F2;
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.Play .background .scene-result .share_container .share_ul{
+    list-style: none;
+    display: flex;
+    margin: 60px 10% 30px;
+}
+
+.Play .background .scene-result .share_container .share_ul .button{
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans JP";
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #4A4A4A;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.Play .background .scene-result .share_container .share_ul .button:last-child{
+    margin-right: 0;
+}
+
+.Play .background .scene-result .button_ul{
+    list-style: none;
+    display: flex;
+    width: 80%;
+    margin: 30px 10% 20px;
+}
+
+.Play .background .scene-result .button_ul .button{
+    position: relative;
+    flex: 1;
+    font-family: "Noto Sans JP";
+    line-height: 45px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    background: #4A4A4A;
+    text-align: center;
+    justify-content: center;
+    border-radius: 7px;
+    margin-right: 30%;
+    cursor: pointer;
+}
+
+.Play .background .scene-result .button_ul .button:last-child{
+    margin-right: 0;
+}
+
+.footer {
+    background: #F1B61B;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+}
+
+.footer_rights {
+    font-size: 10px;
+    margin: 70px 100px 0 0;
+    padding: 0;
+    float: right
+}
+
+.footer_logo {
+    margin: 60px 0 0 100px;
+    float: left
+}
+
+.footer_logo img {
+    height: auto;
+    max-width: 100%;
+    width: 150px
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 20px 0;
+        height: auto
+    }
+    .footer_rights, .footer_logo {
+        float: none;
+        margin: 0 auto
+    }
+}
