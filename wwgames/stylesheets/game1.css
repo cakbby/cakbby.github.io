@@ -142,7 +142,7 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .Play .background .scenes-1 .explain {
+    .Play .background .scene-1 .explain {
         line-height: 20px;
         height: 20px;
         font-size: 15px;
@@ -295,7 +295,7 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .Play .background .scenes-2 .explain {
+    .Play .background .scene-2 .explain {
         line-height: 20px;
         height: fit-content;
         font-size: 15px;
@@ -475,7 +475,7 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 480px) {
-    .Play .background .scenes-3 .explain {
+    .Play .background .scene-3 .explain {
         line-height: 20px;
         height: fit-content;
         font-size: 15px;
@@ -495,6 +495,12 @@ a:active, a:hover {
     .Play .background .scene-3 .select_frame{
         height: 40vh;
         overflow: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Play .background .scene-3 .select_frame svg{
+        width: 50%;
     }
 }
 
