@@ -173,10 +173,10 @@ function returnto_2or3() {
 
 function getParamedResultLink() {
     var ps = location.pathname.split('/');
-    if (ps == "") {
-        var url = location.protocol + "//" + location.host + location.pathname + "result.html" + "?";
+    if (ps[ps.length-1] == "") {
+        var url = location.url + "result.html" + "?";
     } else {
-        var url = location.protocol + "//" + location.host + location.pathname.slice(0, -(pagename.length)) + "result.html" + "?";
+        var url = location.url.substring(0, -ps[ps.length-1].length) + "result.html" + "?";
     }
     url += "m=" + my_chihou.substring(2) + "_";
 
