@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP');
+
+html {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /* -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100% */
+}
+
+body {
+    
+    margin: 0
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    outline-width: 0
+}
+
+.LP {
+    max-width: 1500px;
+    font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif
+}
+
+.LP html, .LP body, .LP div, .LP span, .LP applet, .LP object, .LP iframe,
+.LP h1, .LP h2, .LP h3, .LP h4, .LP h5, .LP h6, .LP p, .LP blockquote, .LP pre,
+.LP a, .LP abbr, .LP acronym, .LP address, .LP big, .LP cite, .LP code, .LP del,
+.LP dfn, .LP em, .LP img, .LP ins, .LP kbd, .LP q, .LP s, .LP samp, .LP small,
+.LP strike, .LP strong, .LP sub, .LP sup, .LP tt, .LP var, .LP b, .LP u, .LP i,
+.LP center, .LP dl, .LP dt, .LP dd, .LP ol, .LP ul, .LP li,
+.LP fieldset,
+.LP form,
+.LP label,
+.LP legend,
+.LP table,
+.LP caption,
+.LP tbody,
+.LP tfoot,
+.LP thead,
+.LP tr,
+.LP th,
+.LP td,
+.LP article,
+.LP aside,
+.LP canvas,
+.LP details,
+.LP embed,
+.LP figure,
+.LP figcaption,
+.LP footer,
+.LP header,
+.LP hgroup,
+.LP menu,
+.LP nav,
+.LP output,
+.LP ruby,
+.LP section,
+.LP summary,
+.LP time,
+.LP mark,
+.LP audio,
+.LP video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+.LP .mobile_space {
+    width:100%;
+    height: 45px;
+}
+
+.LP .top_container {
+    position: relative;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.LP .top_container .top_img {
+    width: 100%;
+    margin: 0 auto;
+    vertical-align: bottom;
+}
+
+.LP .disc_container {
+    background: #FFF8E5;
+    width:100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.LP .disc_container p {
+    margin: 150px auto 100px;
+    width: 70%;
+    line-height: 4vw;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 2vw;
+    color: #4A4A4A;
+}
+
+@media screen and (max-width: 768px) {
+    .LP .disc_container p {
+        margin-top: 90px;
+        line-height: 4vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LP .disc_container p {
+        margin-top: 70px;
+        line-height: 30px;
+        font-size: 18px;
+        margin-bottom: 30px;
+        width: 80%;
+    }
+}
+
+.LP .play_background {
+    margin: 0;
+    background: #FFF8E5;
+    background-repeat: repeat;
+    width: 100%;
+    overflow: hidden;
+}
+
+.LP .play_background .heading {
+    margin: 50px auto 120px;
+    line-height: 5vw;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
+    font-size: 4vw;
+    color: #4A4A4A;
+}
+
+@media screen and (max-width: 768px) {
+    .LP .play_background .heading {
+        margin-bottom: 90px;
+        line-height: 6vw;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LP .play_background .heading {
+        margin-bottom: 50px;
+        line-height: 30px;
+        font-size: 26px;
+    }
+}
+
+.LP .play_background .play_tab h2 {
+    margin: 70px auto 70px;
+    line-height: 4vw;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    font-size: 4vw;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .LP .play_background .play_tab h2 {
+        margin-bottom: 90px;
+        line-height: 6vw;
+        font-size: 6vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LP .play_background .play_tab h2 {
+        margin-bottom: 50px;
+        line-height: 30px;
+        font-size: 24px;
+    }
+}
+
+.LP .play_background .play_tab p{
+    margin: 70px auto 60px;
+    width: 75%;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .LP .play_background .play_tab p {
+        width: 80%;
+        line-height: 24px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LP .play_background .play_tab p {
+        width: 90%;
+        margin-bottom: 40px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+}
+
+.LP .play_background .play_tab .go{
+    display: block;
+    margin: 70px auto 50px;
+    width: fit-content;
+    height: 55px;
+    line-height: 46px;
+    text-align: center;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    padding-left: 50px;
+    padding-right: 40px;
+    font-size: 36px;
+    color: #4A4A4A;
+    border-radius: 8px;
+    border: solid 3px #4A4A4A;
+    background: #FFF8E5;
+    box-shadow: 1px 1px 5px #4A4A4A;
+}
+
+@media screen and (max-width: 768px) {
+    .LP .play_background .play_tab .go{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .LP .play_background .play_tab .go{
+        font-size: 28px;
+    }
+}
+
+.LP .play_background .play_tab .go:hover{
+    padding-left: 53px;
+    padding-right: 43px;
+    height: 59px;
+    line-height: 50px;
+    margin-top: 68px;
+    margin-bottom: 48px;
+}
+
+#tab_control {
+    display: flex;
+}
+/* ▼タブ */
+#tab_control a {
+    display: inline;
+    width: 33%;
+    border-radius: 0.75em 0.75em 0 0; /* 枠線の左上角と右上角だけを丸く */
+    padding-top: 1em;
+    padding-bottom: 1em;
+    letter-spacing: 0.02em;
+    margin-right: 0.5%;
+    text-decoration: none;            /* リンクの下線を消す */
+    color: #4A4A4A;                     /* 文字色：黒色 */
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 2.4vw;
+    font-weight: 700;                /* 太字 */
+    position: relative;               /* JavaScriptでz-indexを調整するために必要 */
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #tab_control a {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #tab_control a {
+        font-size: 4vw;
+    }
+}
+
+#tab_control a:last-child {
+    margin-right: 0;
+}
+/* ▼タブにマウスポインタが載った際(任意) */
+#tab_control a:hover {
+    text-decoration: underline;       /* 文字に下線を引く */
+}
+
+#tab_body div {
+    margin-top: -1px;        /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+    padding: 1em;            /* 内側の余白量 */
+    background-color: white; /* 背景色：白色 */
+    position: relative;      /* z-indexを調整するために必要 */
+    z-index: 0;              /* 重なり順序を「最も背面」にするため */
+}
+
+#tab_control a:nth-child(1), #tab_body div:nth-child(1) { background-color: #F1B61B; }/* 1つ目のタブとその中身用の配色 */
+#tab_control a:nth-child(2), #tab_body div:nth-child(2) { background-color: #E88326; }/* 2つ目のタブとその中身用の配色 */
+#tab_control a:nth-child(3), #tab_body div:nth-child(3) { background-color: #C58353; }/* 3つ目のタブとその中身用の配色 */
+
+.footer {
+    background: #FFF8E5;
+    margin: 0 auto;
+    height: 150px;
+    width: 100%;
+}
+
+.footer_rights {
+    font-size: 10px;
+    margin: 70px 100px 0 0;
+    padding: 0;
+    float: right
+}
+
+.footer_logo {
+    margin: 60px 0 0 100px;
+    float: left
+}
+
+.footer_logo img {
+    height: auto;
+    max-width: 100%;
+    width: 150px
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        text-align: center;
+        padding: 20px 0;
+        height: auto
+    }
+    .footer_rights, .footer_logo {
+        float: none;
+        margin: 0 auto
+    }
+}
