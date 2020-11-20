@@ -437,6 +437,7 @@ a:active, a:hover {
 @media screen and (max-width: 480px) {
     .Play .background .scene-2 .q_frame .img_container img{
         width: 100px;
+        height: 130px;
     }
 }
 
