@@ -246,6 +246,7 @@ a:active, a:hover {
 
 .Play .background .scene-1 .expl_frame .img_container img{
     width: 200px;
+    height: auto;
     margin-right: auto;
     margin-left: 0;
 }
@@ -422,6 +423,7 @@ a:active, a:hover {
 
 .Play .background .scene-2 .q_frame .img_container img{
     width: 200px;
+    height: auto;
     margin-right: auto;
     margin-left: 0;
 }
