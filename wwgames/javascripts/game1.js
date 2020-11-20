@@ -68,10 +68,7 @@ function returnto_1() {
 function next_3() {
     document.getElementById("scene-2").style.display = "none";
 
-    selected_chihou.forEach(c => {
-        selected_chihou.pop();
-    });
-
+    selected_chihou = new Array();
     var chihous = document.getElementsByName("c_select");
     for (let i = 0; i < chihous.length; i++) {
         var c_name = chihous[i].id.substring(2);
@@ -94,14 +91,10 @@ function OnChange_s(name, select) {
         areasvg.style.fill = "#F1B61B";
         areas[0].style.display = 'block';
         areas[1].style.color = "#F1B61B";
-        // areasvg.style.stroke = "#F1B61B";
-        // areasvg.style.strokeWidth = "1";
     } else {
         areasvg.style.fill = "#EEE";
         areas[0].style.display = 'none';
         areas[1].style.color = "#4A4A4A";
-        // areasvg.style.stroke = "#EEE";
-        // areasvg.style.strokeWidth = "1";
     }
 }
 
@@ -131,14 +124,10 @@ function OnChange_s_area(name) {
             areasvg.style.fill = "#F1B61B";
             areas[0].style.display = 'block';
             areas[1].style.color = "#F1B61B";
-            // areasvg.style.stroke = "#F1B61B";
-            // areasvg.style.strokeWidth = "1";
         } else {
             areasvg.style.fill = "#EEE";
             areas[0].style.display = 'none';
             areas[1].style.color = "#4A4A4A";
-            // areasvg.style.stroke = "#EEE";
-            // areasvg.style.strokeWidth = "1";
 
             var all = document.getElementsByName(name.substring(0,2)+"all");
             all[1].style.color = "#4A4A4A";
