@@ -72,7 +72,7 @@ function next_3() {
     for (let i = 0; i < chihous.length; i++) {
         var c_name = chihous[i].id.substring(2);
         var chihou = document.getElementsByName(c_name);
-        if (chihou[0].style.display == "block") {
+        if (chihou[0].style.display == "block" && selected_chihou.includes(c_name)) {
             selected_chihou.push(c_name);
         }
     }
