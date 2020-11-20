@@ -68,11 +68,15 @@ function returnto_1() {
 function next_3() {
     document.getElementById("scene-2").style.display = "none";
 
+    selected_chihou.forEach(c => {
+        selected_chihou.pop();
+    });
+
     var chihous = document.getElementsByName("c_select");
     for (let i = 0; i < chihous.length; i++) {
         var c_name = chihous[i].id.substring(2);
         var chihou = document.getElementsByName(c_name);
-        if (chihou[0].style.display == "block" && !selected_chihou.includes(c_name)) {
+        if (chihou[0].style.display == "block") {
             selected_chihou.push(c_name);
         }
     }
